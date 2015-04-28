@@ -80,7 +80,9 @@ See the accompanying license.txt file for applicable licenses.
 
     <logical-font name="Serif">
       <physical-font char-set="default">
-        <font-face>Times New Roman, Times, Arial Unicode MS, Tahoma, Batang</font-face>
+        <!--Rein Medical Patch Body-Schriftart geändert-->
+        <!--<font-face>Times New Roman, Times, Arial Unicode MS, Tahoma, Batang</font-face>-->
+        <font-face>Arial, Times, Arial Unicode MS, Tahoma, Batang</font-face>
       </physical-font>
       <physical-font char-set="Simplified Chinese">
         <font-face>AdobeSongStd-Light, Arial Unicode MS, Batang</font-face>
