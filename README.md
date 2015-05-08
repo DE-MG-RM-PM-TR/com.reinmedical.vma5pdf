@@ -29,6 +29,8 @@ Folgende Improvements sind schon in der Pipeline:
 - Dokumentmetadaten auf Titelseite und in Kopf-/Fußzeilen
 - Statische Pixel-Grafiken auf Vector (SVG) umstellen
 - Umstellung auf DIN A5
+- Formate für uicontrol
+- Prefix-Text Stepinofo und Results
 
 
 
@@ -52,7 +54,7 @@ https://github.com/DE-MG-RM-PM-TR/com.reinmedical.VMA5PDF
 4.	DITA Datei (Map oder Topic) öffnen.
 
 5.	Fenster „Transformationsszenarien“ öffnen.
-6.	Transformationsszenario „Run DITA-OT Integrator“ ausführen (Doppelklick).
+6.	Transformationsszenario „Run DITA-OT Integrator (vma5pdf)“ ausführen (Doppelklick).
 „BUILD SUCCESSFUL„ erscheint.
 
 7.	Das Plugin ist nun betriebsbereit und kann über das Transformationsszenarion „Rein Medical PDF (vma5pdf)“ initiert werden.
