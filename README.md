@@ -48,16 +48,17 @@ https://github.com/DE-MG-RM-PM-TR/com.reinmedical.VMA5PDF
 (siehe Download-Button unten rechts)
 
 2.	Unzippen und Ordner unter „C://DITA-OTx.x.x/plugins/ ablegen.
+3.	Ordner umbenennen in "com.reinmedical.vma5pdf"
 
-3.	Oxygen starten. 
+4.	Oxygen starten. 
 
-4.	DITA Datei (Map oder Topic) öffnen.
+5.	DITA Datei (Map oder Topic) öffnen.
 
-5.	Fenster „Transformationsszenarien“ öffnen.
-6.	Transformationsszenario „Run DITA-OT Integrator (vma5pdf)“ ausführen (Doppelklick).
+6.	Fenster „Transformationsszenarien“ öffnen.
+7.	Transformationsszenario „Run DITA-OT Integrator (vma5pdf)“ ausführen (Doppelklick).
 „BUILD SUCCESSFUL„ erscheint.
 
-7.	Das Plugin ist nun betriebsbereit und kann über das Transformationsszenarion „Rein Medical PDF (vma5pdf)“ initiert werden.
+8.	Das Plugin ist nun betriebsbereit und kann über das Transformationsszenarion „Rein Medical PDF (vma5pdf)“ initiert werden.
 Eine DITA-Map muss hierfür ausgewählt sein.
 
 
