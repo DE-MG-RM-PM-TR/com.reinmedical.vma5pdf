@@ -22,6 +22,7 @@ Beispiel-Layout siehe Anhang.
 Solltet ihr Änderungsvorschläge haben, bitte her damit!
 
 Folgende Improvements sind schon in der Pipeline:
+- Umbruch innerhalb eines Note verhindern
 - Farbkontrolle für Body-Text und Hyperlinks
 - OEM-spezifische Layouts/Titelseiten
 - Umbruchkontrolle verbessern
