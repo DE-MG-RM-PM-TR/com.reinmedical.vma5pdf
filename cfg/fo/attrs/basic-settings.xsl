@@ -37,12 +37,17 @@
     <xsl:param name="includeRelatedLinkRoles" select="concat(' ', normalize-space($include.rellinks), ' ')"/>
 
     <!-- The default of 215.9mm x 279.4mm is US Letter size (8.5x11in) -->
+  <!--Rein Medical Patch-->    
     <xsl:variable name="page-width">210mm</xsl:variable>
     <xsl:variable name="page-height">297mm</xsl:variable>
+  <!--Rein Medical Patch End-->
 
     <!-- This is the default, but you can set the margins individually below. -->
+  <!--Rein Medical Patch-->
     <xsl:variable name="page-margins">20mm</xsl:variable>
-    
+  <!--Rein Medical Patch End-->
+
+
     <!-- Change these if your page has different margins on different sides. -->
     <xsl:variable name="page-margin-inside" select="$page-margins"/>
     <xsl:variable name="page-margin-outside" select="$page-margins"/>
@@ -51,9 +56,9 @@
 
     <!--The side column width is the amount the body text is indented relative to the margin. -->
     <xsl:variable name="side-col-width">25pt</xsl:variable>
-
+  <!--Rein Medical Patch--> 
     <xsl:variable name="mirror-page-margins" select="true()"/>
-
+  <!--Rein Medical Patch End --> 
     <xsl:variable name="default-font-size">10pt</xsl:variable>
     <xsl:variable name="default-line-height">12pt</xsl:variable>
 </xsl:stylesheet>

@@ -172,9 +172,7 @@ See the accompanying license.txt file for applicable licenses.
 
         <fo:static-content flow-name="first-body-header">
             <fo:block xsl:use-attribute-sets="__body__first__header">
-                <!--
-                    Original-Template, auskommentiert zum Zwecke der Änderung.
-                    
+                
                     <xsl:call-template name="insertVariable">
                     <xsl:with-param name="theVariableID" select="'Body first header'"/>
                     <xsl:with-param name="theParameters">
@@ -193,10 +191,7 @@ See the accompanying license.txt file for applicable licenses.
                         </pagenum>
                     </xsl:with-param>
                 </xsl:call-template>
-                -->
-                <fo:inline>
-                    <fo:external-graphic src="url(Customization/OpenTopic/common/artwork/warning.png)"/>
-                </fo:inline>
+  
                 
             </fo:block>
         </fo:static-content>
