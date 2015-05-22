@@ -7,6 +7,6 @@
     <xsl:import href="basic-settings.xsl"/>
     <xsl:import href="layout-masters-attr.xsl"/>
     <xsl:import href="static-content-attr.xsl"/>
-    
+    <xsl:import href="ui-domain-attr.xsl"/>
     
 </xsl:stylesheet>
