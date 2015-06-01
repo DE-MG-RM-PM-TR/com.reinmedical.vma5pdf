@@ -17,20 +17,20 @@ What´s New im Vergleich zum original DITA2PDF2-Plugin?
 - Body-Font auf Arial gewechselt
 - Erweiterte sprachspezifische Variablen für statische Texte 
 - Neue Note-Ikons
+- Weitere Sprachen implementiert/vorbereitet
 
-Beispiel-Layout siehe Anhang.
 Solltet ihr Änderungsvorschläge haben, bitte her damit!
 
 Folgende Improvements sind schon in der Pipeline:
+- Überschriftennummerierung
 - Umbruch innerhalb eines Note verhindern
 - Farbkontrolle für Body-Text und Hyperlinks
 - OEM-spezifische Layouts/Titelseiten
-- Umbruchkontrolle verbessern
+- Umbruchkontrolle verbessern (Tabellen, Absätze, Überschriften, Blockelemente)
 - Tabellenvisualisierung verbessern
 - Dokumentmetadaten auf Titelseite und in Kopf-/Fußzeilen
 - Statische Pixel-Grafiken auf Vector (SVG) umstellen
 - Umstellung auf DIN A5
-- Formate für uicontrol
 - Prefix-Text Stepinofo und Results
 
 
@@ -38,7 +38,7 @@ Folgende Improvements sind schon in der Pipeline:
 
 # Installation und Inbetriebnahme des Plugins „com.reinmedical.VMA5PDF“
 
-Oxygen oder DITA-OT mit Java JRE-Installation ist erforderlich.
+Oxygen 17.0 und/oder DITA-OT1.8.5 mit Java JRE-Installation ist erforderlich.
 
 ACHTUNG! Bei der erstmaligen Inbetriebnahme dieses Plugins zuerst den Instruktionsblock 
                    "Vorbereitung für die Verwendung des eigenen Plugins mit Oxygen" weiter unten befolgen.
@@ -48,7 +48,7 @@ ACHTUNG! Bei der erstmaligen Inbetriebnahme dieses Plugins zuerst den Instruktio
 https://github.com/DE-MG-RM-PM-TR/com.reinmedical.VMA5PDF
 (siehe Download-Button unten rechts)
 
-2.	Unzippen und Ordner unter „C://DITA-OTx.x.x/plugins/ ablegen.
+2.	Unzippen und Ordner unter „C://DITA-OT1.8.5/plugins/ ablegen.
 3.	Ordner umbenennen in "com.reinmedical.vma5pdf"
 
 4.	Oxygen starten. 
