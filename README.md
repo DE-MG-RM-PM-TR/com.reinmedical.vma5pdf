@@ -1,4 +1,4 @@
-# com.reinmedical.VMA5PDF
+﻿# com.reinmedical.VMA5PDF
 
 Wir haben nun ein erstes (verwendbares) Plugin zur reinmedicalisierten PDF-Ausgabe.
 Dieses Plugin wird im DITA-OT installiert und vom Oxygen XML Editor zur PDF-Generierung verwendet.
@@ -14,24 +14,25 @@ What´s New im Vergleich zum original DITA2PDF2-Plugin?
 - RM-Logo auf Titelseite
 - Even/Odd-Kopfzeile
 - Randabstände vergrößert
-- Body-Font auf Arial gewechselt
+- Body-Font auf SansSerif gewechselt
 - Erweiterte sprachspezifische Variablen für statische Texte 
 - Neue Note-Ikons
 - Weitere Sprachen implementiert/vorbereitet
+- Titelseite mit CE-Logo, Revisionsdatum, Umformatiert
 
 Solltet ihr Änderungsvorschläge haben, bitte her damit!
 
-Folgende Improvements sind schon in der Pipeline:
+Folgende Verbesserungen sind schon in der Pipeline:
 - Überschriftennummerierung
 - Umbruch innerhalb eines Note verhindern
 - Farbkontrolle für Body-Text und Hyperlinks
 - OEM-spezifische Layouts/Titelseiten
 - Umbruchkontrolle verbessern (Tabellen, Absätze, Überschriften, Blockelemente)
 - Tabellenvisualisierung verbessern
-- Dokumentmetadaten auf Titelseite und in Kopf-/Fußzeilen
+- Dokumentmetadaten (Credits, Modelnummern, etc. auf Titelrückseite und in Kopf-/Fußzeilen)
 - Statische Pixel-Grafiken auf Vector (SVG) umstellen
 - Umstellung auf DIN A5
-- Prefix-Text Stepinofo und Results
+- Prefix-Texte Task: Prereq, Context, Stepinfo und Results,... einblenden
 
 
 

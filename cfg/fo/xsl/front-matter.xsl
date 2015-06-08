@@ -115,6 +115,7 @@ See the accompanying license.txt file for applicable licenses.
                             </fo:block>
 
                         </fo:block>
+                        
 
                         <!--<xsl:call-template name="createPreface"/>-->
 
@@ -130,8 +131,8 @@ See the accompanying license.txt file for applicable licenses.
             <fo:flow flow-name="xsl-region-body">
                 <fo:block xsl:use-attribute-sets="__frontmatter">
                     
-                    <!-- set the REIN MEDICAL Company logo -->
-                    <fo:block text-align="center" width="100%">
+                    <!-- REIN MEDICAL set Company logo -->
+                    <fo:block text-align="left" width="100%">
                         <fo:external-graphic 
                             src="url({concat($artworkPrefix, '/Customization/OpenTopic/common/artwork/logo.jpg')})"
                             content-height="scale-to-fit" 
@@ -150,7 +151,7 @@ See the accompanying license.txt file for applicable licenses.
                             scaling="non-uniform"/>
                     </fo:block>-->
                     
-                    
+                    <!-- REIN MEDICAL ENDE -->
                     <!-- set the title -->
                     <fo:block xsl:use-attribute-sets="__frontmatter__title">
                         <xsl:choose>
@@ -175,6 +176,24 @@ See the accompanying license.txt file for applicable licenses.
                     <fo:block xsl:use-attribute-sets="__frontmatter__owner">
                         <xsl:apply-templates select="$map//*[contains(@class,' bookmap/bookmeta ')]"/>
                     </fo:block>
+                    
+                    <!--Rein Medical Ausgabedatum erzeugen und CE-Logo einfügen-->
+                    <!--Zwischen DocRev und CE-Logo befindet sich ein Leerzeichen und Letterspace-->
+                    <fo:block xsl:use-attribute-sets="__rm__revision__date">
+                        <fo:inline text-align="left">DocRev: <xsl:value-of select="format-date(current-date(),'[Y]-[M]-[D]')"/></fo:inline> 
+                    
+                    <fo:inline letter-spacing="30mm"
+                        border-right-width="0pt">&#x00A0;
+                        <fo:external-graphic 
+                            src="url({concat($artworkPrefix, '/Customization/OpenTopic/common/artwork/ce-01.svg')})"
+                            content-height="scale-to-fit" 
+                            height="0.50in"  
+                            content-width="0.70in" 
+                            scaling="non-uniform"
+                            />       
+                    </fo:inline>
+                    </fo:block>
+                    <!--Rein Medical ENDE-->
 
                 </fo:block>
 

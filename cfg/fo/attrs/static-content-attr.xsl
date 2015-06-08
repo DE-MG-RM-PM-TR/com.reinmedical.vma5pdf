@@ -196,7 +196,12 @@ See the accompanying license.txt file for applicable licenses.
         <xsl:attribute name="font-size">40pt</xsl:attribute>
         <xsl:attribute name="font-weight">bold</xsl:attribute>
     </xsl:attribute-set>
-
+  
+<!--Rein Medical Revision auf Titelseite-->
+    <xsl:attribute-set name="__rm__revision__date">
+      <xsl:attribute name="space-before">120mm</xsl:attribute>
+    </xsl:attribute-set>
+<!--Rein Medical ENDE-->
     <xsl:attribute-set name="__glossary__odd__footer" use-attribute-sets="odd__footer">
     </xsl:attribute-set>
 
