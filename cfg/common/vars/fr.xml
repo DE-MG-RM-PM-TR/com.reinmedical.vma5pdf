@@ -125,9 +125,14 @@ See the accompanying license.txt file for applicable licenses.
 
     <!-- The heading string to put at the top of the Index -->
     <variable id="Index">L&apos;index</variable>
-    <variable id="Index Continued String">a continué</variable>
-    <variable id="Index See String">, Voir </variable>
-    <variable id="Index See Also String">Voir aussi </variable>
+    
+     <variable id="Index Continued String">a continué</variable>
+    
+     <!--string before see element-->
+     <variable id="Index See String">, Voir </variable>
+    
+     <!--string before see also element-->
+     <variable id="Index See Also String">Voir aussi </variable>
 
     <!-- The string used to label a chapter within the table of contents. -->
     <variable id="Table of Contents Chapter">Chapitre&#160;<param ref-name="number"/>&#160;:&#160;</variable>
@@ -140,7 +145,15 @@ See the accompanying license.txt file for applicable licenses.
 
     <!-- The string used to label an preface within the table of contents. -->
     <variable id="Table of Contents Preface">Préface&#160;</variable>
-    <variable id="Preface title">Préface</variable>
+     
+     <!-- The string used to label an preface within the table of contents. -->
+     <variable id="Table of Contents Notices"></variable>
+     
+     <!-- The string used to label an preface in body text. -->
+     <variable id="Preface title">Préface</variable>
+     
+     <!-- The string used to label an notices in body text. -->
+     <variable id="Notices title">Notice</variable>
 
     <!-- The heading to put at the top of a chapter when creating a
          chapter-level "mini-TOC" -->
@@ -150,7 +163,7 @@ See the accompanying license.txt file for applicable licenses.
     <!-- Text to use for 'Note' label generated from <note> element. -->
     <variable id="Note">Remarque</variable>
     <!-- Text to use for 'Notice' label generated from <note> element. -->
-    <variable id="Notice"><!--TODO:Notice--></variable>
+    <variable id="Notice">Avis</variable>
     <!-- Text to use for 'Note' label generated from <note> element 
          with 'type' attribute set to 'tip'. -->
     <variable id="Tip">Astuce</variable>
@@ -173,13 +186,13 @@ See the accompanying license.txt file for applicable licenses.
 
     <!-- Text to use for 'Note' label generated from <note> element 
          with 'type' attribute set to 'caution'. -->
-    <variable id="Caution">Avertissement</variable>
-    <!-- Text to use for 'Note' label generated from <note> element with 'type' attribute set to 'warning'. -->
+    <variable id="Caution">Attention</variable>
+    
+     <!-- Text to use for 'Note' label generated from <note> element with 'type' attribute set to 'warning'. -->
     <variable id="Warning">Avertissement</variable>
     <!-- Text to use for 'Note' label generated from <note> element 
          with 'type' attribute set to 'danger'. -->
     <variable id="Danger">Danger</variable>
-
     <!-- Text to use for 'Note' label generated from <note> element
          with 'type' attribute set to 'restriction'. -->
     <variable id="Restriction">Restriction</variable>
@@ -203,6 +216,22 @@ See the accompanying license.txt file for applicable licenses.
     <!-- Default content-reference text prefix. Used to generate reference 
          text in case target cannot be resolved. -->
     <variable id="Content-Reference">Référence de contenu vers&#160;:</variable>
+
+     <!-- EIGENE einegefügt aus EN -->
+     
+     <!-- The title of the links to Related concepts -->
+     <variable id="Related concepts">Related concepts</variable>
+     
+     <!-- The title of the links to Related tasks -->
+     <variable id="Related tasks">Related tasks</variable>
+     
+     <!-- The title of the links to Related references -->
+     <variable id="Related references">Related references</variable>
+     
+     <!-- The title of the links to Related information -->
+     <variable id="Related information">Related information</variable>
+     
+     <!-- EIGENE einegefügt aus EN -->
 
     <!-- Default title text for referenced section title. Used to generate 
          reference text in case reference has no explicit content and
@@ -252,36 +281,64 @@ See the accompanying license.txt file for applicable licenses.
     <variable id="This link">ce lien</variable>
 
     <!-- Image path to use for a note of "note" type. -->
-    <variable id="note Note Image Path">Configuration/OpenTopic/cfg/common/artwork/hand.gif</variable>
+     <variable id="note Note Image Path">Customization/OpenTopic/common/artwork/note.png</variable>
     <!-- Image path to use for a note of "notice" type. -->
-    <variable id="notice Note Image Path">Configuration/OpenTopic/cfg/common/artwork/hand.gif</variable>
+     <variable id="notice Note Image Path">Customization/OpenTopic/common/artwork/note.png</variable>
     <!-- Image path to use for a note of "attention" type. -->
-    <variable id="attention Note Image Path">Configuration/OpenTopic/cfg/common/artwork/warning.gif</variable>
+     <variable id="attention Note Image Path">Customization/OpenTopic/common/artwork/important.png</variable>
 
     <!-- Image path to use for a note of "caution" type. -->
-    <variable id="caution Note Image Path">Configuration/OpenTopic/cfg/common/artwork/warning.gif</variable>
+     <variable id="caution Note Image Path">Customization/OpenTopic/common/artwork/caution.png</variable>
 
     <!-- Image path to use for a note of "danger" type. -->
-    <variable id="danger Note Image Path">Configuration/OpenTopic/cfg/common/artwork/warning.gif</variable>
+     <variable id="danger Note Image Path">Customization/OpenTopic/common/artwork/danger.png</variable>
     <!-- Image path to use for a note of "warning" type. -->
-    <variable id="warning Note Image Path">Configuration/OpenTopic/cfg/common/artwork/warning.gif</variable>
+     <variable id="warning Note Image Path">Customization/OpenTopic/common/artwork/warning.png</variable>
     <!-- Image path to use for a note of "fastpath" type. -->
-    <variable id="fastpath Note Image Path">Configuration/OpenTopic/cfg/common/artwork/hand.gif</variable>
+     <variable id="fastpath Note Image Path">Customization/OpenTopic/common/artwork/nav_right16.png</variable>
 
     <!-- Image path to use for a note of "important" type. -->
-    <variable id="important Note Image Path">Configuration/OpenTopic/cfg/common/artwork/hand.gif</variable>
+     <variable id="important Note Image Path">Customization/OpenTopic/common/artwork/important.png</variable>
 
     <!-- Image path to use for a note of "remember" type. -->
-    <variable id="remember Note Image Path">Configuration/OpenTopic/cfg/common/artwork/hand.gif</variable>
+     <variable id="remember Note Image Path">Customization/OpenTopic/common/artwork/remember.png</variable>
 
     <!-- Image path to use for a note of "restriction" type. -->
-    <variable id="restriction Note Image Path">Configuration/OpenTopic/cfg/common/artwork/hand.gif</variable>
+     <variable id="restriction Note Image Path">Customization/OpenTopic/common/artwork/restriction.png</variable>
 
     <!-- Image path to use for a note of "tip" type. -->
-    <variable id="tip Note Image Path">Configuration/OpenTopic/cfg/common/artwork/hand.gif</variable>
+     <variable id="tip Note Image Path">Customization/OpenTopic/common/artwork/tip.png</variable>
 
     <!-- Image path to use for a note of "other" type. -->
-    <variable id="other Note Image Path">Configuration/OpenTopic/cfg/common/artwork/hand.gif</variable>
+     <variable id="other Note Image Path">Customization/OpenTopic/common/artwork/nav_right16.png</variable>
+    
+     <!--
+        String used for links in end of document in XHTML (SNo: auch für PDF Ausgabe relvant)
+    -->
+
+<!-- The title of the links to parent -->
+     <variable id="Parent topic">Parent Topic</variable>
+     
+     <!-- The title of the links to next topics -->
+     <variable id="Next topic">Next Topic</variable>
+     
+     <!-- The title of the links to previous topics -->
+     <variable id="Previous topic">Previous Topic</variable>
+     
+     <!-- The title of the links to child topics -->
+     <variable id="Child topics">Child Topics</variable>
+     
+     <!-- The title of the links to Related concepts -->
+     <variable id="Related concepts">Related Concepts</variable>
+     
+     <!-- The title of the links to Related tasks -->
+     <variable id="Related tasks">Related Tasks</variable>
+     
+     <!-- The title of the links to Related references -->
+     <variable id="Related references">Related References</variable>
+     
+     <!-- The title of the links to Related information -->
+     <variable id="Related information">Related Information</variable>
 
     <!--
        Strings used in the online-help publishing.
@@ -292,6 +349,9 @@ See the accompanying license.txt file for applicable licenses.
 
     <!-- The title of the "index" button in online-help output -->
     <variable id="Index button title">Index</variable>
+
+     <!-- The separator of multiple index entries in online-help output -->
+     <variable id="Index multiple entries separator">, </variable>
 
     <!-- The title of the "search" button in online-help output -->
     <variable id="Search button title">Recherche</variable>
@@ -325,7 +385,21 @@ See the accompanying license.txt file for applicable licenses.
 
     <!-- The search by text button title in online-help output -->
     <variable id="Search text button title">Recherche</variable>
-    
+  
+     <variable id="Online Help Search Method Field">Search method</variable>
+     <variable id="Online Help Search Method Or">or</variable>
+     <variable id="Online Help Search Method And">and</variable>
+     <variable id="Search Highlight Switch">Highlight text in search results</variable>
+     <variable id="Search index next button title">Show Next</variable>
+     <variable id="Search Whole Words Switch">Find whole words only</variable>
+     <variable id="Search Case Sensitive Switch">Match case</variable>
+     <variable id="Search Stopped Message">The search was stopped after 50 hits.</variable>
+     <!--This one is a java script expression. So if the order of message should be another don't forget to add '+'
+	and quotes to the string expressions.-->
+     <variable id="Search Excluded Stop Words Message">"The following words were excluded from the search: "+<param ref-name="stop-words-list"/></variable>
+     <variable id="Search Search in Progress Message">Search in progress...</variable>
+     <variable id="Search Search Give No Results Message">No matches were found.</variable>
+     
     <!--Label for a step with importance="optional"-->
     <variable id="Optional Step">Facultatif&#xA0;:</variable>
 
@@ -337,13 +411,28 @@ See the accompanying license.txt file for applicable licenses.
     <variable id="Task Result">Résultats</variable>
     <variable id="Task Example">Exemple</variable>
     <variable id="Task Postreq">Que faire ensuite</variable>
-    <variable id="Glossary odd footer"/>
-    <variable id="Glossary even footer"/>
+   
+     <!--Glossary Variables-->
+     <!-- The footer that appears on the odd-numbered glossary pages. -->
+     <variable id="Glossary odd footer"/>
+     
+     <!-- The footer that appears on the even-numbered glossary pages. -->
+     <variable id="Glossary even footer"/>
+     
+     <!-- The header that appears on the odd-numbered glossary pages. -->
     <variable id="Glossary odd header"><param ref-name="prodname"/>&#xA0;|&#xA0;<param ref-name="heading"/>&#xA0;|&#xA0;<param ref-name="pagenum"/></variable>
-    <variable id="Glossary even header"><param ref-name="pagenum"/>&#xA0;|&#xA0;<param ref-name="heading"/>&#xA0;|&#xA0;<param ref-name="prodname"/></variable>
-    <variable id="Glossary">Glossaire</variable>
-    <variable id="List of Tables">Liste des tableaux</variable>
-    <variable id="List of Figures">Liste des illustrations</variable>
+    
+     <!-- The header that appears on the even-numbered glossary pages. --> 
+     <variable id="Glossary even header"><param ref-name="pagenum"/>&#xA0;|&#xA0;<param ref-name="heading"/>&#xA0;|&#xA0;<param ref-name="prodname"/></variable>
+    
+     <!-- The heading string to put at the top of the Glossary -->
+     <variable id="Glossary">Glossaire</variable>
+    
+     <!-- The heading string to put at the top of the List of Tables -->
+     <variable id="List of Tables">Liste des tableaux</variable>
+   
+     <!-- The heading string to put at the top of the List of Figures -->
+     <variable id="List of Figures">Liste des illustrations</variable>
   <variable id="Option">Option</variable>
   <variable id="Description">Description</variable>
   <variable id="#menucascade-separator">&#xA0;&#x3E; </variable>

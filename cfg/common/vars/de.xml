@@ -125,8 +125,13 @@ See the accompanying license.txt file for applicable licenses.
 
     <!-- The heading string to put at the top of the Index -->
     <variable id="Index">Index</variable>
+     
     <variable id="Index Continued String">Fortsetzung</variable>
+     
+     <!--string before see element-->
     <variable id="Index See String">, Siehe </variable>
+     
+     <!--string before see also element-->
     <variable id="Index See Also String">Siehe auch </variable>
 
     <!-- The string used to label a chapter within the table of contents. -->
@@ -140,7 +145,15 @@ See the accompanying license.txt file for applicable licenses.
 
     <!-- The string used to label an preface within the table of contents. -->
     <variable id="Table of Contents Preface">Einleitung&#160;</variable>
+     
+     <!-- The string used to label an preface within the table of contents. -->
+     <variable id="Table of Contents Notices"></variable>
+          
+     <!-- The string used to label an preface in body text. -->
     <variable id="Preface title">Einleitung</variable>
+     
+     <!-- The string used to label an notices in body text. -->
+     <variable id="Notices title">Achtung</variable>
 
     <!-- The heading to put at the top of a chapter when creating a
          chapter-level "mini-TOC" -->
@@ -299,15 +312,46 @@ See the accompanying license.txt file for applicable licenses.
     <!-- Image path to use for a note of "other" type. -->
      <variable id="other Note Image Path">Customization/OpenTopic/common/artwork/nav_right16.png</variable>
     
-    <!--
+     <!--
+        String used for links in end of document in XHTML (SNo: auch für PDF Ausgabe relvant)
+    -->
+     
+     <!-- The title of the links to parent -->
+     <variable id="Parent topic">Parent Topic</variable>
+     
+     <!-- The title of the links to next topics -->
+     <variable id="Next topic">Next Topic</variable>
+     
+     <!-- The title of the links to previous topics -->
+     <variable id="Previous topic">Previous Topic</variable>
+     
+     <!-- The title of the links to child topics -->
+     <variable id="Child topics">Child Topics</variable>
+     
+     <!-- The title of the links to Related concepts -->
+     <variable id="Related concepts">Related Concepts</variable>
+     
+     <!-- The title of the links to Related tasks -->
+     <variable id="Related tasks">Related Tasks</variable>
+     
+     <!-- The title of the links to Related references -->
+     <variable id="Related references">Related References</variable>
+     
+     <!-- The title of the links to Related information -->
+     <variable id="Related information">Related Information</variable> 
+     
+     <!--
        Strings used in the online-help publishing.
     -->
-
+     
     <!-- The title of the "contents" button in online-help output -->
     <variable id="Contents button title">Inhalt</variable>
 
     <!-- The title of the "index" button in online-help output -->
     <variable id="Index button title">Index</variable>
+     
+     <!-- The separator of multiple index entries in online-help output -->
+     <variable id="Index multiple entries separator">, </variable>
 
     <!-- The title of the "search" button in online-help output -->
     <variable id="Search button title">Suche</variable>
@@ -341,7 +385,21 @@ See the accompanying license.txt file for applicable licenses.
 
     <!-- The search by text button title in online-help output -->
     <variable id="Search text button title">Suche</variable>
-
+     
+     <variable id="Online Help Search Method Field">Search method</variable>
+     <variable id="Online Help Search Method Or">or</variable>
+     <variable id="Online Help Search Method And">and</variable>
+     <variable id="Search Highlight Switch">Highlight text in search results</variable>
+     <variable id="Search index next button title">Show Next</variable>
+     <variable id="Search Whole Words Switch">Find whole words only</variable>
+     <variable id="Search Case Sensitive Switch">Match case</variable>
+     <variable id="Search Stopped Message">The search was stopped after 50 hits.</variable>
+     <!--This one is a java script expression. So if the order of message should be another don't forget to add '+'
+	and quotes to the string expressions.-->
+     <variable id="Search Excluded Stop Words Message">"The following words were excluded from the search: "+<param ref-name="stop-words-list"/></variable>
+     <variable id="Search Search in Progress Message">Search in progress...</variable>
+     <variable id="Search Search Give No Results Message">No matches were found.</variable>
+     
     <!--Label for a step with importance="optional"-->
     <variable id="Optional Step">Optional:</variable>
 
@@ -353,13 +411,28 @@ See the accompanying license.txt file for applicable licenses.
     <variable id="Task Result">Ergebnisse</variable>
     <variable id="Task Example">Beispiel</variable>
     <variable id="Task Postreq">Nächste Maßnahme</variable>
-    <variable id="Glossary odd footer"/>
+     
+     <!--Glossary Variables-->
+     <!-- The footer that appears on the odd-numbered glossary pages. -->  
+         <variable id="Glossary odd footer"/>
+     
+     <!-- The footer that appears on the even-numbered glossary pages. -->
     <variable id="Glossary even footer"/>
+     
+     <!-- The header that appears on the odd-numbered glossary pages. -->
     <variable id="Glossary odd header"><param ref-name="prodname"/>&#xA0;|&#xA0;<param ref-name="heading"/>&#xA0;|&#xA0;<param ref-name="pagenum"/></variable>
-    <variable id="Glossary even header"><param ref-name="pagenum"/>&#xA0;|&#xA0;<param ref-name="heading"/>&#xA0;|&#xA0;<param ref-name="prodname"/></variable>
-    <variable id="Glossary">Glossar</variable>
-    <variable id="List of Tables">Tabellenverzeichnis</variable>
-    <variable id="List of Figures">Abbildungsverzeichnis</variable>
+   
+     <!-- The header that appears on the even-numbered glossary pages. -->
+     <variable id="Glossary even header"><param ref-name="pagenum"/>&#xA0;|&#xA0;<param ref-name="heading"/>&#xA0;|&#xA0;<param ref-name="prodname"/></variable>
+    
+     <!-- The heading string to put at the top of the Glossary -->
+     <variable id="Glossary">Glossar</variable>
+    
+     <!-- The heading string to put at the top of the List of Tables -->
+     <variable id="List of Tables">Tabellenverzeichnis</variable>
+    
+     <!-- The heading string to put at the top of the List of Figures -->
+     <variable id="List of Figures">Abbildungsverzeichnis</variable>
   <variable id="Option">Option</variable>
   <variable id="Description">Bezeichnung</variable>
   <variable id="#menucascade-separator">&#xA0;&#x3E; </variable>

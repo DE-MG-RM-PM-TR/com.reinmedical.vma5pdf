@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <!-- 
 Copyright © 2004-2006 by Idiom Technologies, Inc. All rights reserved. 
 IDIOM is a registered trademark of Idiom Technologies, Inc. and WORLDSERVER
@@ -95,6 +94,7 @@ See the accompanying license.txt file for applicable licenses.
 
     <!-- The header that appears on the odd-numbered table of contents
          pages. --> 
+     <!-- Inhaltsverzeichnis -->
     <variable id="Toc odd header"><param ref-name="prodname"/>&#xA0;|&#xA0;<param ref-name="heading"/>&#xA0;|&#xA0;<param ref-name="pagenum"/></variable>
 
     <!-- The header that appears on the odd-numbered table of contents
@@ -216,8 +216,24 @@ See the accompanying license.txt file for applicable licenses.
     <!-- Default content-reference text prefix. Used to generate reference 
          text in case target cannot be resolved. -->
     <variable id="Content-Reference">Content-Reference to:</variable>
-
-    <!-- Default title text for referenced section title. Used to generate 
+     
+     <!-- EIGENE einegefügt aus EN -->
+     
+     <!-- The title of the links to Related concepts -->
+     <variable id="Related concepts">Related concepts</variable>
+     
+     <!-- The title of the links to Related tasks -->
+     <variable id="Related tasks">Related tasks</variable>
+     
+     <!-- The title of the links to Related references -->
+     <variable id="Related references">Related references</variable>
+     
+     <!-- The title of the links to Related information -->
+     <variable id="Related information">Related information</variable>
+     
+     <!-- EIGENE einegefügt aus EN -->
+     
+     <!-- Default title text for referenced section title. Used to generate 
          reference text in case reference has no explicit content and
          referenced section has no title. -->
     <variable id="Untitled section">Untitled section.</variable>
