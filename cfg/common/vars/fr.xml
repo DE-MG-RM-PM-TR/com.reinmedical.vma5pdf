@@ -120,8 +120,11 @@ See the accompanying license.txt file for applicable licenses.
     <!-- The unordered list bullet   -->
     <variable id="Unordered List bullet">&#8226;</variable>
 
-    <!-- The heading string to put at the top of the Table of Contents -->
-    <variable id="Table of Contents">Sommaire</variable>
+     <!-- The heading string to put at the top of the Table of Contents -->
+     <!--Rein Medical Edit: Übersetzungsfehler behoben-->
+     <!--<variable id="Table of Contents">Sommaire</variable>-->
+     <variable id="Table of Contents">Table des matières</variable>
+     <!--Rein Medical Edit Ende-->
 
     <!-- The heading string to put at the top of the Index -->
     <variable id="Index">L&apos;index</variable>
