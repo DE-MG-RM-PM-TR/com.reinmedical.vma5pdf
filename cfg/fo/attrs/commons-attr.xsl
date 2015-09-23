@@ -199,7 +199,15 @@ See the accompanying license.txt file for applicable licenses.
         <xsl:attribute name="font-weight">bold</xsl:attribute>
         <xsl:attribute name="space-before">5pt</xsl:attribute>
         <xsl:attribute name="space-after">10pt</xsl:attribute>
-        <xsl:attribute name="keep-with-previous.within-page">always</xsl:attribute>
+        <!--Rein Medical Edit keep-with-next-Attribut ergänzt, previous raus.
+        Da der Content eigentlich erst NACH dem Titel kommt, erscheint es sinnvoller
+        Die nachgelagerten Elemente und nicht die vorherigen (welche sollten das sein?)
+        mit dem Titel zusammen zu halten.-->
+        
+        <xsl:attribute name="keep-with-previous.within-page">auto</xsl:attribute>
+        <xsl:attribute name="keep-with-next.within-page">always</xsl:attribute>
+        
+        <!--Rein Medical Edit Ende-->
     </xsl:attribute-set>
 
     <xsl:attribute-set name="topic" use-attribute-sets="base-font">
@@ -239,6 +247,8 @@ See the accompanying license.txt file for applicable licenses.
     </xsl:attribute-set>
 
     <xsl:attribute-set name="shortdesc">
+        <!--Rein Medical Edit keep-with-next-Attribut ergänzt-->
+        <xsl:attribute name="keep-with-next.within-page">always</xsl:attribute>
     </xsl:attribute-set>
 
     <xsl:attribute-set name="topic__shortdesc" use-attribute-sets="body">
