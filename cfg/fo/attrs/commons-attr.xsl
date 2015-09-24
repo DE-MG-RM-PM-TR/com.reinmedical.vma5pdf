@@ -77,6 +77,10 @@ See the accompanying license.txt file for applicable licenses.
   <xsl:attribute-set name="common.block">
     <xsl:attribute name="space-before">0.6em</xsl:attribute>
     <xsl:attribute name="space-after">0.6em</xsl:attribute>
+      <!--Rein Medical Edit: Schusterjungen Hurenkinder-->
+      <xsl:attribute name="orphans">3</xsl:attribute>
+      <xsl:attribute name="widows">3</xsl:attribute>
+      <!--Rein Medical Edit Ende-->
   </xsl:attribute-set>
 
   <xsl:attribute-set name="common.link">
@@ -327,6 +331,8 @@ See the accompanying license.txt file for applicable licenses.
     </xsl:attribute-set>
 
     <xsl:attribute-set name="note" use-attribute-sets="common.block">
+        <!--Rein Medical Edit: Note-Block immer zusammenhalten-->
+        <xsl:attribute name="keep-togehter.within-page">always</xsl:attribute>
     </xsl:attribute-set>
 
     <xsl:attribute-set name="note__table" use-attribute-sets="common.block">
