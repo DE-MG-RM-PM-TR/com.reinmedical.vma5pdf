@@ -63,6 +63,11 @@ See the accompanying license.txt file for applicable licenses.
     <xsl:variable name="maxCharsInShortDesc">
         <xsl:call-template name="getMaxCharsForShortdescKeep"/>
     </xsl:variable>
+    
+    <!--Rein Medical Edit: Prozessing für manuelle Pagebreaks-->
+    <xsl:template match="processing-instruction('pagebreak')">
+        <fo:block break-after="page"/>
+    </xsl:template>
 
     <xsl:template match="*[@conref]" priority="99">
         <fo:block xsl:use-attribute-sets="__unresolved__conref">
