@@ -131,25 +131,13 @@ See the accompanying license.txt file for applicable licenses.
             <fo:flow flow-name="xsl-region-body">
                 <fo:block xsl:use-attribute-sets="__frontmatter">
                     
-                    <!-- REIN MEDICAL set Company logo -->
-                    <fo:block text-align="left" width="100%">
-                        <fo:external-graphic 
-                            src="url({concat($artworkPrefix, '/Customization/OpenTopic/common/artwork/logo.jpg')})"
-                            content-height="scale-to-fit" 
-                            height="1.20in"  
-                            content-width="3.00in" 
-                            scaling="non-uniform"/>
-                    </fo:block>
+                    <!-- REIN MEDICAL set Company background image -->
                     
-                    <!-- set REIN MEDICAL VIEWMEDIC brand logo -->
-<!--                    <fo:block text-align="center" width="100%">
-                        <fo:external-graphic 
-                            src="url({concat($artworkPrefix, '/Customization/OpenTopic/common/artwork/viewmedic-sw.jpg')})"
-                            content-height="scale-to-fit" 
-                            height="1.50in"  
-                            content-width="3.00in" 
-                            scaling="non-uniform"/>
-                    </fo:block>-->
+                    <fo:block-container absolute-position="absolute"
+                        top="-2cm" left="-2cm" width="21cm" height="29.7cm"
+                        background-image="Customization/OpenTopic/common/artwork/ManualCoverPageA4-01.svg">
+                        <fo:block/>
+                    </fo:block-container>
                     
                     <!-- REIN MEDICAL ENDE -->
                     <!-- set the title -->
@@ -181,17 +169,7 @@ See the accompanying license.txt file for applicable licenses.
                     <!--Zwischen DocRev und CE-Logo befindet sich ein Leerzeichen und Letterspace-->
                     <fo:block xsl:use-attribute-sets="__rm__revision__date">
                         <fo:inline text-align="left">DocRev: <xsl:value-of select="format-date(current-date(),'[Y]-[M]-[D]')"/></fo:inline> 
-                    
-                    <fo:inline letter-spacing="30mm"
-                        border-right-width="0pt">&#x00A0;
-                        <fo:external-graphic 
-                            src="url({concat($artworkPrefix, '/Customization/OpenTopic/common/artwork/ce-01.svg')})"
-                            content-height="scale-to-fit" 
-                            height="0.50in"  
-                            content-width="0.70in" 
-                            scaling="non-uniform"
-                            />       
-                    </fo:inline>
+                                        
                     </fo:block>
                     <!--Rein Medical ENDE-->
 

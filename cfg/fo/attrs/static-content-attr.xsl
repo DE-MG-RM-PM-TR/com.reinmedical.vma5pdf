@@ -199,7 +199,7 @@ See the accompanying license.txt file for applicable licenses.
   
 <!--Rein Medical Revision auf Titelseite-->
     <xsl:attribute-set name="__rm__revision__date">
-      <xsl:attribute name="space-before">120mm</xsl:attribute>
+      <xsl:attribute name="space-before">160mm</xsl:attribute>
     </xsl:attribute-set>
 <!--Rein Medical ENDE-->
     <xsl:attribute-set name="__glossary__odd__footer" use-attribute-sets="odd__footer">
