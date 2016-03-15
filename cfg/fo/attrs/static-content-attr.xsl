@@ -183,7 +183,7 @@ See the accompanying license.txt file for applicable licenses.
     </xsl:attribute-set>
 
     <xsl:attribute-set name="__chapter__frontmatter__name__container">
-        <xsl:attribute name="font-size">20pt</xsl:attribute>
+        <xsl:attribute name="font-size">40pt</xsl:attribute>
         <xsl:attribute name="font-weight">bold</xsl:attribute>
         <xsl:attribute name="border-top-style">solid</xsl:attribute>
         <xsl:attribute name="border-bottom-style">solid</xsl:attribute>
@@ -199,7 +199,9 @@ See the accompanying license.txt file for applicable licenses.
   
 <!--Rein Medical Revision auf Titelseite-->
     <xsl:attribute-set name="__rm__revision__date">
-      <xsl:attribute name="space-before">160mm</xsl:attribute>
+      <xsl:attribute name="space-before">10mm</xsl:attribute>
+      <xsl:attribute name="color">white</xsl:attribute>
+     
     </xsl:attribute-set>
 <!--Rein Medical ENDE-->
     <xsl:attribute-set name="__glossary__odd__footer" use-attribute-sets="odd__footer">

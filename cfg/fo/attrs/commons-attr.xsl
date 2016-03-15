@@ -76,7 +76,7 @@ See the accompanying license.txt file for applicable licenses.
   <!-- paragraph-like blocks -->
   <xsl:attribute-set name="common.block">
     <xsl:attribute name="space-before">0.6em</xsl:attribute>
-    <xsl:attribute name="space-after">0.6em</xsl:attribute>
+    <xsl:attribute name="space-after">0.2em</xsl:attribute>
       <!--Rein Medical Edit: Schusterjungen Hurenkinder-->
       <xsl:attribute name="orphans">3</xsl:attribute>
       <xsl:attribute name="widows">3</xsl:attribute>
