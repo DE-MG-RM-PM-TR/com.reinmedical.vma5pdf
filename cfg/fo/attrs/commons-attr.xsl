@@ -47,7 +47,7 @@ See the accompanying license.txt file for applicable licenses.
   <xsl:attribute-set name="common.border__bottom">
     <xsl:attribute name="border-after-style">solid</xsl:attribute>
     <xsl:attribute name="border-after-width">1pt</xsl:attribute>
-    <xsl:attribute name="border-after-color">black</xsl:attribute>
+    <xsl:attribute name="border-after-color">lightgray</xsl:attribute>
   </xsl:attribute-set>
 
   <xsl:attribute-set name="common.border__right">
@@ -108,7 +108,7 @@ See the accompanying license.txt file for applicable licenses.
     </xsl:attribute-set>
 
     <xsl:attribute-set name="topic.title" use-attribute-sets="common.title common.border__bottom">
-    <xsl:attribute name="border-after-width">3pt</xsl:attribute>
+    <xsl:attribute name="border-after-width">2pt</xsl:attribute>
         <xsl:attribute name="space-before">0pt</xsl:attribute>
         <xsl:attribute name="space-after">16.8pt</xsl:attribute>
         <xsl:attribute name="font-size">18pt</xsl:attribute>
