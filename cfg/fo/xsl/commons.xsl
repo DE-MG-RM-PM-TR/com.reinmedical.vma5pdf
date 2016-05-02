@@ -126,6 +126,9 @@ See the accompanying license.txt file for applicable licenses.
             <xsl:apply-templates select="." mode="topicTitleNumber"/>
           </xsl:for-each>
         </fo:marker>
+        <xsl:if test="not(ancestor::*[contains(@class, ' bookmap/bookmap ')])">
+              <fo:block break-after="page"/>
+        </xsl:if>
       </xsl:if>
         <xsl:apply-templates select="*[contains(@class, ' topic/title ')]"/>
         <xsl:apply-templates select="*[contains(@class, ' topic/prolog ')]"/>
