@@ -112,19 +112,31 @@ See the accompanying license.txt file for applicable licenses.
       <xsl:apply-templates select="$map//*[contains(@class,' bookmap/bookmeta ')]"/>
     </fo:block>
     
+    <!--Rein Medical Edit: Auto Sprachkennzeichnung-->
     <fo:block>
       <xsl:choose>
         <xsl:when test="contains(@xml:lang, 'en-gb')">
-          <xsl:text>Englisch</xsl:text>
+          <fo:external-graphic src="Customization/OpenTopic/common/artwork/Sprach-Stempel_EN.png"/>
         </xsl:when>
-        
         <xsl:when test="contains(@xml:lang, 'de-de')">
-          <xsl:text>Deutsch</xsl:text>
+          <fo:external-graphic src="Customization/OpenTopic/common/artwork/Sprach-Stempel_DE.png"/>
+        </xsl:when>
+        <xsl:when test="contains(@xml:lang, 'es-es')">
+          <fo:external-graphic src="Customization/OpenTopic/common/artwork/Sprach-Stempel_ES.png"/>
+        </xsl:when>
+        <xsl:when test="contains(@xml:lang, 'fr-fr')">
+          <fo:external-graphic src="Customization/OpenTopic/common/artwork/Sprach-Stempel_FR.png"/>
+        </xsl:when>
+        <xsl:when test="contains(@xml:lang, 'it-it')">
+          <fo:external-graphic src="Customization/OpenTopic/common/artwork/Sprach-Stempel_IT.png"/>
         </xsl:when>
         
-        <xsl:otherwise>Keine Sprache vergeben.</xsl:otherwise>
+        <xsl:otherwise>
+          <xsl:message>REIN MEDICAL INFO: There is no language stamp defined for this language in front-matter.xsl </xsl:message>
+        </xsl:otherwise>
       </xsl:choose>
     </fo:block>
+    <!--Rein Medical Edit: ENDE-->
     
     <!--Rein Medical Edit: Auto Revisionsdatum-->
     <fo:block xsl:use-attribute-sets="__rm__revision__date">
