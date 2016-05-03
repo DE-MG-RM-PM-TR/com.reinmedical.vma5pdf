@@ -112,6 +112,20 @@ See the accompanying license.txt file for applicable licenses.
       <xsl:apply-templates select="$map//*[contains(@class,' bookmap/bookmeta ')]"/>
     </fo:block>
     
+    <fo:block>
+      <xsl:choose>
+        <xsl:when test="contains(@xml:lang, 'en-gb')">
+          <xsl:text>Englisch</xsl:text>
+        </xsl:when>
+        
+        <xsl:when test="contains(@xml:lang, 'de-de')">
+          <xsl:text>Deutsch</xsl:text>
+        </xsl:when>
+        
+        <xsl:otherwise>Keine Sprache vergeben.</xsl:otherwise>
+      </xsl:choose>
+    </fo:block>
+    
     <!--Rein Medical Edit: Auto Revisionsdatum-->
     <fo:block xsl:use-attribute-sets="__rm__revision__date">
     <fo:inline text-align="left">DocRev: <xsl:value-of select="format-date(current-date(),'[Y]-[M]-[D]')"/>
