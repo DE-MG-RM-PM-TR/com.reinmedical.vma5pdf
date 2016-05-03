@@ -41,7 +41,7 @@ See the accompanying license.txt file for applicable licenses.
   <xsl:attribute-set name="common.border__top">
     <xsl:attribute name="border-before-style">solid</xsl:attribute>
     <xsl:attribute name="border-before-width">1pt</xsl:attribute>
-    <xsl:attribute name="border-before-color">black</xsl:attribute>
+      <xsl:attribute name="border-before-color">lightgray</xsl:attribute>
   </xsl:attribute-set>
 
   <xsl:attribute-set name="common.border__bottom">
@@ -53,13 +53,13 @@ See the accompanying license.txt file for applicable licenses.
   <xsl:attribute-set name="common.border__right">
     <xsl:attribute name="border-end-style">solid</xsl:attribute>
     <xsl:attribute name="border-end-width">1pt</xsl:attribute>
-    <xsl:attribute name="border-end-color">black</xsl:attribute>
+      <xsl:attribute name="border-end-color">lightgray</xsl:attribute>
   </xsl:attribute-set>
 
   <xsl:attribute-set name="common.border__left">
     <xsl:attribute name="border-start-style">solid</xsl:attribute>
     <xsl:attribute name="border-start-width">1pt</xsl:attribute>
-    <xsl:attribute name="border-start-color">black</xsl:attribute>
+      <xsl:attribute name="border-start-color">lightgray</xsl:attribute>
   </xsl:attribute-set>
 
   <xsl:attribute-set name="common.border" use-attribute-sets="common.border__top common.border__right common.border__bottom common.border__left"/>
