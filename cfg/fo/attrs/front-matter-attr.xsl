@@ -79,6 +79,13 @@ See the accompanying license.txt file for applicable licenses.
     <xsl:attribute-set name="__frontmatter__booklibrary">
         <!--<xsl:attribute name=""></xsl:attribute>-->
     </xsl:attribute-set>
+    
+    <!--Rein Medical Revision auf Titelseite-->
+    <xsl:attribute-set name="__rm__revision__date">
+        <xsl:attribute name="space-before">120mm</xsl:attribute>
+    </xsl:attribute-set>
+    <!--Rein Medical ENDE-->
+    
 
   <xsl:attribute-set name="back-cover">
     <xsl:attribute name="force-page-count">end-on-even</xsl:attribute>

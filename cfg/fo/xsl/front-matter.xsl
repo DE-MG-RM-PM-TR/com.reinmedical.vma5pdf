@@ -111,6 +111,14 @@ See the accompanying license.txt file for applicable licenses.
     <fo:block xsl:use-attribute-sets="__frontmatter__owner">
       <xsl:apply-templates select="$map//*[contains(@class,' bookmap/bookmeta ')]"/>
     </fo:block>
+    
+    <!--Rein Medical Edit: Auto Revisionsdatum-->
+    <fo:block xsl:use-attribute-sets="__rm__revision__date">
+    <fo:inline text-align="left">DocRev: <xsl:value-of select="format-date(current-date(),'[Y]-[M]-[D]')"/>
+    </fo:inline> 
+    </fo:block>
+    <!--Rein Medical Edit: ENDE-->
+      
   </xsl:template>
   
     <xsl:template name="createBackCover">
