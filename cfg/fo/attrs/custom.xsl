@@ -7,5 +7,6 @@
    <xsl:import href="ui-domain-attr.xsl"/>
    <xsl:import href="tables-attr.xsl"/>
    <xsl:import href="front-matter-attr.xsl"/>
+   <xsl:import href="static-content-attr.xsl"/>
     
 </xsl:stylesheet>

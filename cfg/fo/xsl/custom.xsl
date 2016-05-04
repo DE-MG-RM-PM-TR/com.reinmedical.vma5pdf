@@ -6,5 +6,6 @@
 <xsl:import href="ui-domain.xsl"/>
 <xsl:import href="tables.xsl"/>
 <xsl:import href="front-matter.xsl"/>
+<xsl:import href="static-content.xsl"/>
     
 </xsl:stylesheet>
