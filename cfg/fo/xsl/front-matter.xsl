@@ -81,6 +81,22 @@ See the accompanying license.txt file for applicable licenses.
             <xsl:call-template name="insertFrontMatterStaticContents"/>
             <fo:flow flow-name="xsl-region-body">
               <fo:block-container xsl:use-attribute-sets="__frontmatter">
+                
+                <!-- REIN MEDICAL set Company background image -->
+                
+<!--                <fo:block background-image="Customization/OpenTopic/common/artwork/note.png" background-repeat="no-repeat" color="red">
+                  Dieser Block hat ein Hintergrundbild! - Dieser Block hat ein Hintergrundbild! - Dieser Block hat ein 
+                  Hintergrundbild! - Dieser Block hat ein Hintergrundbild! - Dieser Block hat ein Hintergrundbild!
+                </fo:block>-->
+                
+                <fo:block-container absolute-position="absolute"
+                  top="-2cm" left="-2cm" width="21cm" height="29.7cm"
+                  background-image="Customization/OpenTopic/common/artwork/ManualCoverPageA4_V2-01.png">
+                  <fo:block/>
+                </fo:block-container>
+                
+                <!-- REIN MEDICAL ENDE -->
+                
                 <xsl:call-template name="createFrontCoverContents"/>
               </fo:block-container>
             </fo:flow>
@@ -113,36 +129,51 @@ See the accompanying license.txt file for applicable licenses.
     </fo:block>
     
     <!--Rein Medical Edit: Auto Sprachkennzeichnung-->
-    <fo:block>
+    <fo:block-container xsl:use-attribute-sets="__rm__frontmatter__language" >
       <xsl:choose>
         <xsl:when test="contains(@xml:lang, 'en-gb')">
-          <fo:external-graphic src="Customization/OpenTopic/common/artwork/Sprach-Stempel_EN.png"/>
+          <fo:block>
+           [EN]
+          </fo:block>
         </xsl:when>
+        
         <xsl:when test="contains(@xml:lang, 'de-de')">
-          <fo:external-graphic src="Customization/OpenTopic/common/artwork/Sprach-Stempel_DE.png"/>
+          <fo:block>
+            [DE]
+          </fo:block>
         </xsl:when>
+        
         <xsl:when test="contains(@xml:lang, 'es-es')">
-          <fo:external-graphic src="Customization/OpenTopic/common/artwork/Sprach-Stempel_ES.png"/>
+          <fo:block>
+            [ES]
+          </fo:block>
         </xsl:when>
+        
         <xsl:when test="contains(@xml:lang, 'fr-fr')">
-          <fo:external-graphic src="Customization/OpenTopic/common/artwork/Sprach-Stempel_FR.png"/>
+          <fo:block>
+            [FR]
+          </fo:block>
         </xsl:when>
+        
         <xsl:when test="contains(@xml:lang, 'it-it')">
-          <fo:external-graphic src="Customization/OpenTopic/common/artwork/Sprach-Stempel_IT.png"/>
+          <fo:block>
+            [IT]
+          </fo:block>
         </xsl:when>
         
         <xsl:otherwise>
           <xsl:message>REIN MEDICAL INFO: There is no language stamp defined for this language in front-matter.xsl </xsl:message>
         </xsl:otherwise>
       </xsl:choose>
-    </fo:block>
+    </fo:block-container>
     <!--Rein Medical Edit: ENDE-->
     
     <!--Rein Medical Edit: Auto Revisionsdatum-->
-    <fo:block xsl:use-attribute-sets="__rm__revision__date">
-    <fo:inline text-align="left">DocRev: <xsl:value-of select="format-date(current-date(),'[Y]-[M]-[D]')"/>
-    </fo:inline> 
-    </fo:block>
+    <fo:block-container xsl:use-attribute-sets="__rm__revision__date" >
+     
+    <fo:block>DocRev: <xsl:value-of select="format-date(current-date(),'[Y]-[M]-[D]')"/>
+    </fo:block> 
+    </fo:block-container>
     <!--Rein Medical Edit: ENDE-->
       
   </xsl:template>
