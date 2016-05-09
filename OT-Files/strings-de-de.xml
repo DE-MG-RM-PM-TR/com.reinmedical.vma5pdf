@@ -34,17 +34,18 @@
 <str name="intro-to-topic-link"></str>
 
 <!-- peril notice labels -->
-<str name="Note">Anmerkung</str>
+<str name="Note">Hinweis</str>
 <str name="Notes">Anmerkungen</str>
 <str name="Tip">Tipp</str>
 <str name="Fastpath">Direktaufruf</str>
 <str name="Important">Wichtig</str>
 <str name="Attention">Achtung</str>
-<str name="Caution">ACHTUNG</str>
-<str name="Danger">VORSICHT</str>
+<str name="Caution">Vorsicht</str>
+<str name="Danger">Gefahr</str>
 <str name="Remember">Hinweis</str>
 <str name="Restriction">Einschränkung</str>
 <str name="Warning">Warnung</str>
+<str name="Notice">Achtung</str>
 
 <!-- default title text for section level generated sections -->
 <str name="Contents">Inhaltsverzeichnis</str>
