@@ -37,14 +37,14 @@ See the accompanying license.txt file for applicable licenses.
 
   <xsl:attribute-set name="odd__header">
     <xsl:attribute name="text-align">end</xsl:attribute>
-    <xsl:attribute name="end-indent">10pt</xsl:attribute>
-    <xsl:attribute name="space-before">10pt</xsl:attribute>
+    <xsl:attribute name="end-indent">18pt</xsl:attribute>
+    <xsl:attribute name="space-before">18pt</xsl:attribute>
     <xsl:attribute name="space-before.conditionality">retain</xsl:attribute>
   </xsl:attribute-set>
 
   <xsl:attribute-set name="even__header">
-    <xsl:attribute name="start-indent">10pt</xsl:attribute>
-    <xsl:attribute name="space-before">10pt</xsl:attribute>
+    <xsl:attribute name="start-indent">18pt</xsl:attribute>
+    <xsl:attribute name="space-before">18pt</xsl:attribute>
     <xsl:attribute name="space-before.conditionality">retain</xsl:attribute>
   </xsl:attribute-set>
 
