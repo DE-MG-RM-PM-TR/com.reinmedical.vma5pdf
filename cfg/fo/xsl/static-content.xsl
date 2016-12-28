@@ -123,6 +123,48 @@ See the accompanying license.txt file for applicable licenses.
 
     <xsl:template name="insertBodyOddHeader">
         <fo:static-content flow-name="odd-body-header">
+            
+            <!--Rein Medical Edit: Auto Sprachkennzeichnung-->
+            <fo:block-container xsl:use-attribute-sets="__rm__odd__body__header__language" >
+                <xsl:choose>
+                    <xsl:when test="contains(@xml:lang, 'en-gb')">
+                        <fo:block>
+                            [EN]
+                        </fo:block>
+                    </xsl:when>
+                    
+                    <xsl:when test="contains(@xml:lang, 'de-de')">
+                        <fo:block>
+                            [DE]
+                        </fo:block>
+                    </xsl:when>
+                    
+                    <xsl:when test="contains(@xml:lang, 'es-es')">
+                        <fo:block>
+                            [ES]
+                        </fo:block>
+                    </xsl:when>
+                    
+                    <xsl:when test="contains(@xml:lang, 'fr-fr')">
+                        <fo:block>
+                            [FR]
+                        </fo:block>
+                    </xsl:when>
+                    
+                    <xsl:when test="contains(@xml:lang, 'it-it')">
+                        <fo:block>
+                            [IT]
+                        </fo:block>
+                    </xsl:when>
+                    
+                    <xsl:otherwise>
+                        <xsl:message>REIN MEDICAL INFO: There is no language stamp defined for this language in front-matter.xsl </xsl:message>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </fo:block-container>
+            <!--Rein Medical Edit: ENDE-->
+            
+            
             <fo:block xsl:use-attribute-sets="__body__odd__header">
                 <xsl:call-template name="getVariable">
                     <xsl:with-param name="id" select="'Body odd header'"/>
@@ -148,6 +190,48 @@ See the accompanying license.txt file for applicable licenses.
 
     <xsl:template name="insertBodyEvenHeader">
         <fo:static-content flow-name="even-body-header">
+            
+            
+            <!--Rein Medical Edit: Auto Sprachkennzeichnung-->
+            <fo:block-container xsl:use-attribute-sets="__rm__even__body__header__language" >
+                <xsl:choose>
+                    <xsl:when test="contains(@xml:lang, 'en-gb')">
+                        <fo:block>
+                            [EN]
+                        </fo:block>
+                    </xsl:when>
+                    
+                    <xsl:when test="contains(@xml:lang, 'de-de')">
+                        <fo:block>
+                            [DE]
+                        </fo:block>
+                    </xsl:when>
+                    
+                    <xsl:when test="contains(@xml:lang, 'es-es')">
+                        <fo:block>
+                            [ES]
+                        </fo:block>
+                    </xsl:when>
+                    
+                    <xsl:when test="contains(@xml:lang, 'fr-fr')">
+                        <fo:block>
+                            [FR]
+                        </fo:block>
+                    </xsl:when>
+                    
+                    <xsl:when test="contains(@xml:lang, 'it-it')">
+                        <fo:block>
+                            [IT]
+                        </fo:block>
+                    </xsl:when>
+                    
+                    <xsl:otherwise>
+                        <xsl:message>REIN MEDICAL INFO: There is no language stamp defined for this language in front-matter.xsl </xsl:message>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </fo:block-container>
+            <!--Rein Medical Edit: ENDE-->
+            
             <fo:block xsl:use-attribute-sets="__body__even__header">
                 <xsl:call-template name="getVariable">
                     <xsl:with-param name="id" select="'Body even header'"/>
@@ -281,6 +365,7 @@ See the accompanying license.txt file for applicable licenses.
                     </xsl:with-param>
                 </xsl:call-template>
             </fo:block>
+            
         </fo:static-content>
     </xsl:template>
 

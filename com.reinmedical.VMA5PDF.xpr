@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project version="17.0">
+<project version="18.1">
     <meta>
         <filters directoryPatterns="" filePatterns="" positiveFilePatterns="" showHiddenFiles="false"/>
         <options>
-            <serialized version="17.0" xml:space="preserve">
+            <serialized version="18.1" xml:space="preserve">
                 <serializableOrderedMap>
                     <entry>
                         <String>enable.project.master.files.support</String>
@@ -511,7 +511,7 @@
             <file name="../../../../DITA-OT1.8.5/plugins/org.dita.pdf2/plugin.xml"/>
             <file name="../../../../DITA-OT1.8.5/plugins/org.dita.pdf2/xsl/fo/topic2fo_shell_axf.xsl"/>
         </folder>
-        <folder path="../../../../DITA-OT1.8.5/"/>
+        <folder path="../../../../DITA-OT2.x/"/>
         <folder path="../ANT-Builds/"/>
         <folder path="."/>
     </projectTree>

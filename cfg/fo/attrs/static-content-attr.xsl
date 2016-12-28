@@ -86,7 +86,12 @@ See the accompanying license.txt file for applicable licenses.
 
     <xsl:attribute-set name="__body__odd__header" use-attribute-sets="odd__header">
     </xsl:attribute-set>
-
+  
+  <!--Rein Medical Start-->
+  <xsl:attribute-set name="__rm__odd__body__header__language">
+  </xsl:attribute-set>
+<!--Rein Medical End-->
+  
     <xsl:attribute-set name="__body__odd__header__heading">
     </xsl:attribute-set>
 
@@ -95,6 +100,11 @@ See the accompanying license.txt file for applicable licenses.
 
     <xsl:attribute-set name="__body__even__header" use-attribute-sets="even__header">
     </xsl:attribute-set>
+  
+  <!--Rein Medical Start-->
+  <xsl:attribute-set name="__rm__even__body__header__language">
+  </xsl:attribute-set>
+  <!--Rein Medical End-->
 
     <xsl:attribute-set name="__body__even__header__heading">
     </xsl:attribute-set>
