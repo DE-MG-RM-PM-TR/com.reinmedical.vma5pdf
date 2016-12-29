@@ -391,6 +391,55 @@ See the accompanying license.txt file for applicable licenses.
 
     <xsl:template name="insertTocOddHeader">
         <fo:static-content flow-name="odd-toc-header">
+            <!--Rein Medical Edit: Auto Sprachkennzeichnung-->
+            <fo:block-container xsl:use-attribute-sets="__rm__header__language__tab">
+                <xsl:choose>
+                    <xsl:when test="contains(@xml:lang, 'en-gb')">
+                        <fo:block xsl:use-attribute-sets="__rm__body__odd__header__language __rm__language__tab">
+                            <xsl:attribute name="start-indent">19cm</xsl:attribute>
+                            <xsl:attribute name="end-indent">1cm</xsl:attribute>
+                            <fo:inline>EN</fo:inline>
+                        </fo:block>
+                    </xsl:when>
+                    
+                    <xsl:when test="contains(@xml:lang, 'de-de')">
+                        <fo:block xsl:use-attribute-sets="__rm__body__odd__header__language __rm__language__tab">
+                            <xsl:attribute name="start-indent">18cm</xsl:attribute>
+                            <xsl:attribute name="end-indent">2cm</xsl:attribute>
+                            <fo:inline>DE</fo:inline>
+                        </fo:block>
+                    </xsl:when>
+                    
+                    <xsl:when test="contains(@xml:lang, 'es-es')">
+                        <fo:block xsl:use-attribute-sets="__rm__body__odd__header__language __rm__language__tab">
+                            <xsl:attribute name="start-indent">17cm</xsl:attribute>
+                            <xsl:attribute name="end-indent">3cm</xsl:attribute>
+                            <fo:inline>ES</fo:inline>
+                        </fo:block>
+                    </xsl:when>
+                    
+                    <xsl:when test="contains(@xml:lang, 'fr-fr')">
+                        <fo:block xsl:use-attribute-sets="__rm__body__odd__header__language __rm__language__tab">
+                            <xsl:attribute name="start-indent">16cm</xsl:attribute>
+                            <xsl:attribute name="end-indent">4cm</xsl:attribute>
+                            <fo:inline>FR</fo:inline>
+                        </fo:block>
+                    </xsl:when>
+                    
+                    <xsl:when test="contains(@xml:lang, 'it-it')">
+                        <fo:block xsl:use-attribute-sets="__rm__body__odd__header__language __rm__language__tab">
+                            <xsl:attribute name="start-indent">15cm</xsl:attribute>
+                            <xsl:attribute name="end-indent">5cm</xsl:attribute>
+                            <fo:inline>IT</fo:inline>
+                        </fo:block>
+                    </xsl:when>
+                    
+                    <xsl:otherwise>
+                        <xsl:message>REIN MEDICAL INFO: There is no language stamp defined for this language in front-matter.xsl </xsl:message>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </fo:block-container>
+            <!--Rein Medical Edit: ENDE-->
             <fo:block xsl:use-attribute-sets="__toc__odd__header">
                 <xsl:call-template name="getVariable">
                     <xsl:with-param name="id" select="'Toc odd header'"/>
@@ -416,6 +465,55 @@ See the accompanying license.txt file for applicable licenses.
 
     <xsl:template name="insertTocEvenHeader">
         <fo:static-content flow-name="even-toc-header">
+            <!--Rein Medical Edit: Auto Sprachkennzeichnung-->
+            <fo:block-container xsl:use-attribute-sets="__rm__header__language__tab">
+                <xsl:choose>
+                    <xsl:when test="contains(@xml:lang, 'en-gb')">
+                        <fo:block xsl:use-attribute-sets="__rm__body__even__header__language __rm__language__tab" >
+                            <xsl:attribute name="start-indent">1cm</xsl:attribute>
+                            <xsl:attribute name="end-indent">19cm</xsl:attribute>
+                            <fo:inline>EN</fo:inline>
+                        </fo:block>
+                    </xsl:when>
+                    
+                    <xsl:when test="contains(@xml:lang, 'de-de')">
+                        <fo:block xsl:use-attribute-sets="__rm__body__even__header__language  __rm__language__tab">
+                            <xsl:attribute name="start-indent">2cm</xsl:attribute>
+                            <xsl:attribute name="end-indent">18cm</xsl:attribute>
+                            <fo:inline>DE</fo:inline>
+                        </fo:block>
+                    </xsl:when>
+                    
+                    <xsl:when test="contains(@xml:lang, 'es-es')">
+                        <fo:block xsl:use-attribute-sets="__rm__body__even__header__language __rm__language__tab">
+                            <xsl:attribute name="start-indent">3cm</xsl:attribute>
+                            <xsl:attribute name="end-indent">17cm</xsl:attribute>
+                            <fo:inline>ES</fo:inline>
+                        </fo:block>
+                    </xsl:when>
+                    
+                    <xsl:when test="contains(@xml:lang, 'fr-fr')">
+                        <fo:block xsl:use-attribute-sets="__rm__body__even__header__language __rm__language__tab">
+                            <xsl:attribute name="start-indent">4cm</xsl:attribute>
+                            <xsl:attribute name="end-indent">16cm</xsl:attribute>
+                            <fo:inline>FR</fo:inline>
+                        </fo:block>
+                    </xsl:when>
+                    
+                    <xsl:when test="contains(@xml:lang, 'it-it')">
+                        <fo:block xsl:use-attribute-sets="__rm__body__even__header__language __rm__language__tab">
+                            <xsl:attribute name="start-indent">5cm</xsl:attribute>
+                            <xsl:attribute name="end-indent">15cm</xsl:attribute>
+                            <fo:inline>IT</fo:inline>
+                        </fo:block>
+                    </xsl:when>
+                    
+                    <xsl:otherwise>
+                        <xsl:message>REIN MEDICAL INFO: There is no language stamp defined for this language in front-matter.xsl </xsl:message>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </fo:block-container>
+            <!--Rein Medical Edit: ENDE-->
             <fo:block xsl:use-attribute-sets="__toc__even__header">
                 <xsl:call-template name="getVariable">
                     <xsl:with-param name="id" select="'Toc even header'"/>
