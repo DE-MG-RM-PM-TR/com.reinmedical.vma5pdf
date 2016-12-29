@@ -88,7 +88,25 @@ See the accompanying license.txt file for applicable licenses.
     </xsl:attribute-set>
   
   <!--Rein Medical Start-->
-  <xsl:attribute-set name="__rm__odd__body__header__language">
+  <xsl:attribute-set name="__rm__language__tab">  
+    
+    <xsl:attribute name="border-width">1pt</xsl:attribute>
+    <xsl:attribute name="border-color">555555</xsl:attribute>
+    <xsl:attribute name="border-style">solid</xsl:attribute>
+    
+    <xsl:attribute name="background-color">black</xsl:attribute>
+    
+    <xsl:attribute name="text-align">center</xsl:attribute>
+    <xsl:attribute name="color">white</xsl:attribute>
+  </xsl:attribute-set>
+  <!--Rein Medical End-->
+  
+<!--Rein Medical Start-->
+  <xsl:attribute-set name="__rm__body__odd__header__language">
+    <xsl:attribute name="space-start">20pt</xsl:attribute>
+    <xsl:attribute name="space-end">20pt</xsl:attribute>
+    <xsl:attribute name="start-indent">520pt</xsl:attribute>
+    <xsl:attribute name="end-indent">40pt</xsl:attribute>
   </xsl:attribute-set>
 <!--Rein Medical End-->
   
@@ -102,7 +120,11 @@ See the accompanying license.txt file for applicable licenses.
     </xsl:attribute-set>
   
   <!--Rein Medical Start-->
-  <xsl:attribute-set name="__rm__even__body__header__language">
+  <xsl:attribute-set name="__rm__body__even__header__language">
+    <xsl:attribute name="space-start">20pt</xsl:attribute>
+    <xsl:attribute name="space-end">20pt</xsl:attribute>
+    <xsl:attribute name="start-indent">40pt</xsl:attribute>
+    <xsl:attribute name="end-indent">520pt</xsl:attribute>
   </xsl:attribute-set>
   <!--Rein Medical End-->
 

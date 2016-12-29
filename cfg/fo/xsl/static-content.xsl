@@ -125,35 +125,35 @@ See the accompanying license.txt file for applicable licenses.
         <fo:static-content flow-name="odd-body-header">
             
             <!--Rein Medical Edit: Auto Sprachkennzeichnung-->
-            <fo:block-container xsl:use-attribute-sets="__rm__odd__body__header__language" >
+            <fo:block-container>
                 <xsl:choose>
                     <xsl:when test="contains(@xml:lang, 'en-gb')">
-                        <fo:block>
-                            [EN]
+                        <fo:block xsl:use-attribute-sets="__rm__body__odd__header__language __rm__language__tab">
+                            EN
                         </fo:block>
                     </xsl:when>
                     
                     <xsl:when test="contains(@xml:lang, 'de-de')">
-                        <fo:block>
-                            [DE]
+                        <fo:block xsl:use-attribute-sets="__rm__body__odd__header__language __rm__language__tab">
+                            DE
                         </fo:block>
                     </xsl:when>
                     
                     <xsl:when test="contains(@xml:lang, 'es-es')">
-                        <fo:block>
-                            [ES]
+                        <fo:block xsl:use-attribute-sets="__rm__body__odd__header__language __rm__language__tab">
+                            ES
                         </fo:block>
                     </xsl:when>
                     
                     <xsl:when test="contains(@xml:lang, 'fr-fr')">
-                        <fo:block>
-                            [FR]
+                        <fo:block xsl:use-attribute-sets="__rm__body__odd__header__language __rm__language__tab">
+                            FR
                         </fo:block>
                     </xsl:when>
                     
                     <xsl:when test="contains(@xml:lang, 'it-it')">
-                        <fo:block>
-                            [IT]
+                        <fo:block xsl:use-attribute-sets="__rm__body__odd__header__language __rm__language__tab">
+                            IT
                         </fo:block>
                     </xsl:when>
                     
@@ -193,35 +193,35 @@ See the accompanying license.txt file for applicable licenses.
             
             
             <!--Rein Medical Edit: Auto Sprachkennzeichnung-->
-            <fo:block-container xsl:use-attribute-sets="__rm__even__body__header__language" >
+            <fo:block-container>
                 <xsl:choose>
                     <xsl:when test="contains(@xml:lang, 'en-gb')">
-                        <fo:block>
-                            [EN]
+                        <fo:block xsl:use-attribute-sets="__rm__body__even__header__language __rm__language__tab" >
+                            EN
                         </fo:block>
                     </xsl:when>
                     
                     <xsl:when test="contains(@xml:lang, 'de-de')">
-                        <fo:block>
-                            [DE]
+                        <fo:block xsl:use-attribute-sets="__rm__body__even__header__language  __rm__language__tab" >
+                            DE
                         </fo:block>
                     </xsl:when>
                     
                     <xsl:when test="contains(@xml:lang, 'es-es')">
-                        <fo:block>
-                            [ES]
+                        <fo:block xsl:use-attribute-sets="__rm__body__even__header__language __rm__language__tab">
+                            ES
                         </fo:block>
                     </xsl:when>
                     
                     <xsl:when test="contains(@xml:lang, 'fr-fr')">
-                        <fo:block>
-                            [FR]
+                        <fo:block xsl:use-attribute-sets="__rm__body__even__header__language __rm__language__tab">
+                            FR
                         </fo:block>
                     </xsl:when>
                     
                     <xsl:when test="contains(@xml:lang, 'it-it')">
-                        <fo:block>
-                            [IT]
+                        <fo:block xsl:use-attribute-sets="__rm__body__even__header__language __rm__language__tab">
+                            IT
                         </fo:block>
                     </xsl:when>
                     
