@@ -503,13 +503,7 @@
     </meta>
     <projectTree name="com.reinmedical.VMA5PDF.xpr">
         <folder masterFiles="true" name="Master Files">
-            <file name="../../../../DITA-OT1.8.5/plugins/org.dita.pdf2/build.xml"/>
-            <file name="build.xml"/>
-            <file name="../../../../DITA-OT1.8.5/plugins/org.dita.pdf2/build_fop.xml"/>
-            <file name="cfg/fo/attrs/custom.xsl"/>
-            <file name="cfg/fo/xsl/custom.xsl"/>
-            <file name="../../../../DITA-OT1.8.5/plugins/org.dita.pdf2/plugin.xml"/>
-            <file name="../../../../DITA-OT1.8.5/plugins/org.dita.pdf2/xsl/fo/topic2fo_shell_axf.xsl"/>
+            <file name="../../../../DITA-OT2.x/plugins/com.reinmedical.vma5pdf/cfg/catalog.xml"/>
         </folder>
         <folder path="../../../../DITA-OT2.x/"/>
         <folder path="../ANT-Builds/"/>
