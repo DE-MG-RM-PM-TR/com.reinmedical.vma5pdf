@@ -129,7 +129,7 @@ See the accompanying license.txt file for applicable licenses.
     </fo:block>
     
     <!--Rein Medical Edit: Auto Sprachkennzeichnung-->
-    <fo:block-container xsl:use-attribute-sets="__rm__frontmatter__language" >
+    <!--<fo:block-container xsl:use-attribute-sets="__rm__frontmatter__language" >
       <xsl:choose>
         <xsl:when test="contains(@xml:lang, 'en-gb')">
           <fo:block>
@@ -165,7 +165,7 @@ See the accompanying license.txt file for applicable licenses.
           <xsl:message>REIN MEDICAL INFO: There is no language stamp defined for this language in front-matter.xsl </xsl:message>
         </xsl:otherwise>
       </xsl:choose>
-    </fo:block-container>
+    </fo:block-container>-->
     <!--Rein Medical Edit: ENDE-->
     
     <!--Rein Medical Edit: Auto Revisionsdatum-->
