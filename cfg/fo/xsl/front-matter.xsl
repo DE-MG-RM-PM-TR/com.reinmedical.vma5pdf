@@ -128,18 +128,19 @@ See the accompanying license.txt file for applicable licenses.
       <xsl:apply-templates select="$map//*[contains(@class,' bookmap/bookmeta ')]"/>
     </fo:block>
     
+
     <!--Rein Medical Edit: Auto Sprachkennzeichnung-->
-    <!--<fo:block-container xsl:use-attribute-sets="__rm__frontmatter__language" >
+   <fo:block-container xsl:use-attribute-sets="__rm__frontmatter__language" >
       <xsl:choose>
         <xsl:when test="contains(@xml:lang, 'en-gb')">
           <fo:block>
-           [EN]
+            [EN]  
           </fo:block>
         </xsl:when>
         
         <xsl:when test="contains(@xml:lang, 'de-de')">
           <fo:block>
-            [DE]
+            [DE]  
           </fo:block>
         </xsl:when>
         
@@ -169,6 +170,7 @@ See the accompanying license.txt file for applicable licenses.
     <!--Rein Medical Edit: ENDE-->
     
     <!--Rein Medical Edit: Auto Revisionsdatum-->
+
     <fo:block-container xsl:use-attribute-sets="__rm__revision__date" >
      
     <fo:block>DocRev: <xsl:value-of select="format-date(current-date(),'[Y]-[M]-[D]')"/>
