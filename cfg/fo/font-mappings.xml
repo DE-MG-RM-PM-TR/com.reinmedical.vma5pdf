@@ -27,8 +27,8 @@ These terms and conditions supersede the terms and conditions in any
 licensing agreement to the extent that such terms and conditions conflict
 with those set forth herein.
 
-This file is part of the DITA Open Toolkit project hosted on Sourceforge.net. 
-See the accompanying license.txt file for applicable licenses.
+This file is part of the DITA Open Toolkit project.
+See the accompanying LICENSE file for applicable license.
 -->
 
 <font-mappings>
@@ -51,7 +51,6 @@ See the accompanying license.txt file for applicable licenses.
       <alias name="Courier">Monospaced</alias>
     </aliases>
     
-    <!-- OXYGEN PATCH START  Set fallback fonts for Asian and RTL languages. -->
     <logical-font name="Sans">
       <physical-font char-set="default">
         <font-face>Helvetica, Arial Unicode MS, Tahoma, Batang, SimSun</font-face>
@@ -130,7 +129,6 @@ See the accompanying license.txt file for applicable licenses.
         <override-size>smaller</override-size>
       </physical-font>
     </logical-font>
-    <!-- OXYGEN PATCH END  Set fallback fonts for Asian and RTL languages. -->
   </font-table>
   
 </font-mappings>
