@@ -37,8 +37,8 @@ See the accompanying LICENSE file for applicable license.
     version="2.0">
 
   <!-- FIXME these imports should be moved to shell -->
-  <xsl:import href="topic-attr.xsl"/>
-  <xsl:import href="concept-attr.xsl"/>
+<!--  <xsl:import href="topic-attr.xsl"/>
+  <xsl:import href="concept-attr.xsl"/>-->
 
   <!-- common attribute sets -->
 

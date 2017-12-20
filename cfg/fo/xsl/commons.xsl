@@ -44,8 +44,8 @@ See the accompanying LICENSE file for applicable license.
     version="2.0">
 
     <!-- FIXME these imports should be moved to shell -->
-    <xsl:import href="topic.xsl"/>
-    <xsl:import href="concept.xsl"/>
+<!--    <xsl:import href="topic.xsl"/>
+    <xsl:import href="concept.xsl"/>-->
 
     <xsl:key name="id" match="*[@id]" use="@id"/>
     <xsl:key name="map-id"
@@ -117,9 +117,7 @@ See the accompanying LICENSE file for applicable license.
             <xsl:apply-templates select="." mode="topicTitleNumber"/>
           </xsl:for-each>
         </fo:marker>
-        <xsl:if test="not(ancestor::*[contains(@class, ' bookmap/bookmap ')])">
-              <fo:block break-after="page"/>
-        </xsl:if>
+      </xsl:if>
       <fo:block>
         <xsl:apply-templates select="*[contains(@class,' ditaot-d/ditaval-startprop ')]" mode="flag-attributes"/>
         <xsl:apply-templates select="*[contains(@class, ' topic/title ')]"/>
@@ -131,7 +129,6 @@ See the accompanying LICENSE file for applicable license.
         <xsl:apply-templates select="*[contains(@class,' topic/topic ')]"/>
         <xsl:apply-templates select="." mode="topicEpilog"/>
       </fo:block>
-      </xsl:if>
     </xsl:template>
 
     <!-- Hook that allows common end-of-topic processing (after nested topics). -->
