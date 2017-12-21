@@ -128,7 +128,11 @@ See the accompanying LICENSE file for applicable license.
                     <xsl:with-param name="id" select="'Body odd header'"/>
                     <xsl:with-param name="params">
                         <prodname>
-                            <xsl:value-of select="$productName"/>
+                            <!-- Rein Medical Edit -->
+                            <!--BugFix $productName wurde nicht in Header ausgegeben, wenn Content aus Unterelement unknown/ph kommen soll-->
+                            <!--<xsl:value-of select="$productName"/>-->
+                            <xsl:value-of select="//*[1]/topicmeta[1]/prodinfo[1]/prodname[1]"/>
+                            <!-- Rein Medical Edit END-->
                         </prodname>
                         <heading>
                             <fo:inline xsl:use-attribute-sets="__body__odd__header__heading">
@@ -153,7 +157,11 @@ See the accompanying LICENSE file for applicable license.
                     <xsl:with-param name="id" select="'Body even header'"/>
                     <xsl:with-param name="params">
                         <prodname>
-                            <xsl:value-of select="$productName"/>
+                            <!-- Rein Medical Edit -->
+                            <!--BugFix $productName wurde nicht in Header ausgegeben, wenn Content aus Unterelement unknown/ph kommen soll-->
+                            <!--<xsl:value-of select="$productName"/>-->
+                            <xsl:value-of select="//*[1]/topicmeta[1]/prodinfo[1]/prodname[1]"/>
+                            <!-- Rein Medical Edit END-->
                         </prodname>
                         <heading>
                             <fo:inline xsl:use-attribute-sets="__body__even__header__heading">
@@ -178,7 +186,11 @@ See the accompanying LICENSE file for applicable license.
                     <xsl:with-param name="id" select="'Body first header'"/>
                     <xsl:with-param name="params">
                         <prodname>
-                          <xsl:value-of select="$productName"/>
+                            <!-- Rein Medical Edit -->
+                            <!--BugFix $productName wurde nicht in Header ausgegeben, wenn Content aus Unterelement unknown/ph kommen soll-->
+                            <!--<xsl:value-of select="$productName"/>-->
+                            <xsl:value-of select="//*[1]/topicmeta[1]/prodinfo[1]/prodname[1]"/>
+                            <!-- Rein Medical Edit END-->
                         </prodname>
                         <heading>
                             <fo:inline xsl:use-attribute-sets="__body__first__header__heading">
@@ -291,7 +303,11 @@ See the accompanying LICENSE file for applicable license.
                     <xsl:with-param name="id" select="'Toc odd header'"/>
                     <xsl:with-param name="params">
                         <prodname>
-                            <xsl:value-of select="$productName"/>
+                            <!-- Rein Medical Edit -->
+                            <!--BugFix $productName wurde nicht in Header ausgegeben, wenn Content aus Unterelement unknown/ph kommen soll-->
+                            <!--<xsl:value-of select="$productName"/>-->
+                            <xsl:value-of select="//*[1]/topicmeta[1]/prodinfo[1]/prodname[1]"/>
+                            <!-- Rein Medical Edit END-->
                         </prodname>
                         <heading>
                             <fo:inline xsl:use-attribute-sets="__body__odd__header__heading">
@@ -316,7 +332,11 @@ See the accompanying LICENSE file for applicable license.
                     <xsl:with-param name="id" select="'Toc even header'"/>
                     <xsl:with-param name="params">
                         <prodname>
-                            <xsl:value-of select="$productName"/>
+                            <!-- Rein Medical Edit -->
+                            <!--BugFix $productName wurde nicht in Header ausgegeben, wenn Content aus Unterelement unknown/ph kommen soll-->
+                            <!--<xsl:value-of select="$productName"/>-->
+                            <xsl:value-of select="//*[1]/topicmeta[1]/prodinfo[1]/prodname[1]"/>
+                            <!-- Rein Medical Edit END-->
                         </prodname>
                         <heading>
                             <fo:inline xsl:use-attribute-sets="__body__even__header__heading">
@@ -375,7 +395,11 @@ See the accompanying LICENSE file for applicable license.
                     <xsl:with-param name="id" select="'Index odd header'"/>
                     <xsl:with-param name="params">
                         <prodname>
-                            <xsl:value-of select="$productName"/>
+                            <!-- Rein Medical Edit -->
+                            <!--BugFix $productName wurde nicht in Header ausgegeben, wenn Content aus Unterelement unknown/ph kommen soll-->
+                            <!--<xsl:value-of select="$productName"/>-->
+                            <xsl:value-of select="//*[1]/topicmeta[1]/prodinfo[1]/prodname[1]"/>
+                            <!-- Rein Medical Edit END-->
                         </prodname>
                         <heading>
                             <fo:inline xsl:use-attribute-sets="__body__odd__header__heading">
@@ -400,7 +424,11 @@ See the accompanying LICENSE file for applicable license.
                     <xsl:with-param name="id" select="'Index even header'"/>
                     <xsl:with-param name="params">
                         <prodname>
-                            <xsl:value-of select="$productName"/>
+                            <!-- Rein Medical Edit -->
+                            <!--BugFix $productName wurde nicht in Header ausgegeben, wenn Content aus Unterelement unknown/ph kommen soll-->
+                            <!--<xsl:value-of select="$productName"/>-->
+                            <xsl:value-of select="//*[1]/topicmeta[1]/prodinfo[1]/prodname[1]"/>
+                            <!-- Rein Medical Edit END-->
                         </prodname>
                         <heading>
                             <fo:inline xsl:use-attribute-sets="__body__even__header__heading">
@@ -459,7 +487,11 @@ See the accompanying LICENSE file for applicable license.
                     <xsl:with-param name="id" select="'Preface odd header'"/>
                     <xsl:with-param name="params">
                         <prodname>
-                            <xsl:value-of select="$productName"/>
+                            <!-- Rein Medical Edit -->
+                            <!--BugFix $productName wurde nicht in Header ausgegeben, wenn Content aus Unterelement unknown/ph kommen soll-->
+                            <!--<xsl:value-of select="$productName"/>-->
+                            <xsl:value-of select="//*[1]/topicmeta[1]/prodinfo[1]/prodname[1]"/>
+                            <!-- Rein Medical Edit END-->
                         </prodname>
                         <heading>
                             <fo:inline xsl:use-attribute-sets="__body__odd__header__heading">
@@ -484,7 +516,11 @@ See the accompanying LICENSE file for applicable license.
                     <xsl:with-param name="id" select="'Preface even header'"/>
                     <xsl:with-param name="params">
                         <prodname>
-                            <xsl:value-of select="$productName"/>
+                            <!-- Rein Medical Edit -->
+                            <!--BugFix $productName wurde nicht in Header ausgegeben, wenn Content aus Unterelement unknown/ph kommen soll-->
+                            <!--<xsl:value-of select="$productName"/>-->
+                            <xsl:value-of select="//*[1]/topicmeta[1]/prodinfo[1]/prodname[1]"/>
+                            <!-- Rein Medical Edit END-->
                         </prodname>
                         <heading>
                             <fo:inline xsl:use-attribute-sets="__body__even__header__heading">
@@ -509,7 +545,11 @@ See the accompanying LICENSE file for applicable license.
                     <xsl:with-param name="id" select="'Preface first header'"/>
                     <xsl:with-param name="params">
                         <prodname>
-                          <xsl:value-of select="$productName"/>
+                            <!-- Rein Medical Edit -->
+                            <!--BugFix $productName wurde nicht in Header ausgegeben, wenn Content aus Unterelement unknown/ph kommen soll-->
+                            <!--<xsl:value-of select="$productName"/>-->
+                            <xsl:value-of select="//*[1]/topicmeta[1]/prodinfo[1]/prodname[1]"/>
+                            <!-- Rein Medical Edit END-->
                         </prodname>
                         <heading>
                             <fo:inline xsl:use-attribute-sets="__body__first__header__heading">
@@ -622,7 +662,11 @@ See the accompanying LICENSE file for applicable license.
                     <xsl:with-param name="id" select="'Preface odd header'"/>
                     <xsl:with-param name="params">
                         <prodname>
-                            <xsl:value-of select="$productName"/>
+                            <!-- Rein Medical Edit -->
+                            <!--BugFix $productName wurde nicht in Header ausgegeben, wenn Content aus Unterelement unknown/ph kommen soll-->
+                            <!--<xsl:value-of select="$productName"/>-->
+                            <xsl:value-of select="//*[1]/topicmeta[1]/prodinfo[1]/prodname[1]"/>
+                            <!-- Rein Medical Edit END-->
                         </prodname>
                         <heading>
                             <fo:inline xsl:use-attribute-sets="__body__odd__header__heading">
@@ -647,7 +691,11 @@ See the accompanying LICENSE file for applicable license.
                     <xsl:with-param name="id" select="'Preface even header'"/>
                     <xsl:with-param name="params">
                         <prodname>
-                            <xsl:value-of select="$productName"/>
+                            <!-- Rein Medical Edit -->
+                            <!--BugFix $productName wurde nicht in Header ausgegeben, wenn Content aus Unterelement unknown/ph kommen soll-->
+                            <!--<xsl:value-of select="$productName"/>-->
+                            <xsl:value-of select="//*[1]/topicmeta[1]/prodinfo[1]/prodname[1]"/>
+                            <!-- Rein Medical Edit END-->
                         </prodname>
                         <heading>
                             <fo:inline xsl:use-attribute-sets="__body__even__header__heading">
@@ -672,7 +720,11 @@ See the accompanying LICENSE file for applicable license.
                     <xsl:with-param name="id" select="'Preface even header'"/>
                     <xsl:with-param name="params">
                         <prodname>
-                            <xsl:value-of select="$productName"/>
+                            <!-- Rein Medical Edit -->
+                            <!--BugFix $productName wurde nicht in Header ausgegeben, wenn Content aus Unterelement unknown/ph kommen soll-->
+                            <!--<xsl:value-of select="$productName"/>-->
+                            <xsl:value-of select="//*[1]/topicmeta[1]/prodinfo[1]/prodname[1]"/>
+                            <!-- Rein Medical Edit END-->
                         </prodname>
                         <heading>
                             <fo:inline xsl:use-attribute-sets="__body__even__header__heading">
@@ -756,7 +808,11 @@ See the accompanying LICENSE file for applicable license.
             <xsl:with-param name="id" select="'Preface odd header'"/>
             <xsl:with-param name="params">
               <prodname>
-                <xsl:value-of select="$productName"/>
+                  <!-- Rein Medical Edit -->
+                  <!--BugFix $productName wurde nicht in Header ausgegeben, wenn Content aus Unterelement unknown/ph kommen soll-->
+                  <!--<xsl:value-of select="$productName"/>-->
+                  <xsl:value-of select="//*[1]/topicmeta[1]/prodinfo[1]/prodname[1]"/>
+                  <!-- Rein Medical Edit END-->
               </prodname>
               <heading>
                 <fo:inline xsl:use-attribute-sets="__body__odd__header__heading">
@@ -781,7 +837,11 @@ See the accompanying LICENSE file for applicable license.
             <xsl:with-param name="id" select="'Preface even header'"/>
             <xsl:with-param name="params">
               <prodname>
-                <xsl:value-of select="$productName"/>
+                  <!-- Rein Medical Edit -->
+                  <!--BugFix $productName wurde nicht in Header ausgegeben, wenn Content aus Unterelement unknown/ph kommen soll-->
+                  <!--<xsl:value-of select="$productName"/>-->
+                  <xsl:value-of select="//*[1]/topicmeta[1]/prodinfo[1]/prodname[1]"/>
+                  <!-- Rein Medical Edit END-->
               </prodname>
               <heading>
                 <fo:inline xsl:use-attribute-sets="__body__even__header__heading">
@@ -850,7 +910,11 @@ See the accompanying LICENSE file for applicable license.
                     <xsl:with-param name="id" select="'Glossary odd header'"/>
                     <xsl:with-param name="params">
                         <prodname>
-                            <xsl:value-of select="$productName"/>
+                            <!-- Rein Medical Edit -->
+                            <!--BugFix $productName wurde nicht in Header ausgegeben, wenn Content aus Unterelement unknown/ph kommen soll-->
+                            <!--<xsl:value-of select="$productName"/>-->
+                            <xsl:value-of select="//*[1]/topicmeta[1]/prodinfo[1]/prodname[1]"/>
+                            <!-- Rein Medical Edit END-->
                         </prodname>
                         <heading>
                             <fo:inline xsl:use-attribute-sets="__body__odd__header__heading">
@@ -875,7 +939,11 @@ See the accompanying LICENSE file for applicable license.
                     <xsl:with-param name="id" select="'Glossary even header'"/>
                     <xsl:with-param name="params">
                         <prodname>
-                            <xsl:value-of select="$productName"/>
+                            <!-- Rein Medical Edit -->
+                            <!--BugFix $productName wurde nicht in Header ausgegeben, wenn Content aus Unterelement unknown/ph kommen soll-->
+                            <!--<xsl:value-of select="$productName"/>-->
+                            <xsl:value-of select="//*[1]/topicmeta[1]/prodinfo[1]/prodname[1]"/>
+                            <!-- Rein Medical Edit END-->
                         </prodname>
                         <heading>
                             <fo:inline xsl:use-attribute-sets="__body__even__header__heading">
