@@ -119,8 +119,29 @@ See the accompanying LICENSE file for applicable license.
             </xsl:otherwise>
           </xsl:choose>
         </fo:block>
-        <fo:block xsl:use-attribute-sets="__rm__ArtNr"><xsl:value-of select="//data[./@id[contains(., '_ArtNr')]]/ph"/>; (MK <xsl:value-of select="//data[./@id[contains(., '_Produktrevision')]]/ph"/>)
-        </fo:block>
+        
+        <!--Rein Medical Edit Start-->
+        <!--list model numbers and product revision no (if available and greater than 0)-->
+        <xsl:choose>
+          <!--if revision is "0" print model numbers only-->
+          <xsl:when test="//data[./@id[contains(., '_Produktrevision')]]/ph = 0">
+            <fo:block xsl:use-attribute-sets="__rm__ArtNr"><xsl:value-of select="//data[./@id[contains(., '_ArtNr')]]/ph"/>
+            </fo:block>
+          </xsl:when>
+          <!--if revision is not available print model numbers only-->
+          <xsl:when test="not(//data[./@id[contains(., '_Produktrevision')]]/ph)">
+            <fo:block xsl:use-attribute-sets="__rm__ArtNr"><xsl:value-of select="//data[./@id[contains(., '_ArtNr')]]/ph"/>
+            </fo:block>
+          </xsl:when>
+          <!--all other situations print model numbers followed by revision as "MK x" statement-->
+          <xsl:otherwise>
+            <fo:block xsl:use-attribute-sets="__rm__ArtNr"><xsl:value-of select="//data[./@id[contains(., '_ArtNr')]]/ph"/>; (MK <xsl:value-of select="//data[./@id[contains(., '_Produktrevision')]]/ph"/>)
+            </fo:block>
+          </xsl:otherwise>
+        </xsl:choose>
+        <!--Rein Medical Edit End-->
+        
+        
       </fo:block-container></fo:block-container>
     <!-- set the subtitle -->
     <xsl:apply-templates select="$map//*[contains(@class, ' bookmap/booktitlealt ')]"/>
