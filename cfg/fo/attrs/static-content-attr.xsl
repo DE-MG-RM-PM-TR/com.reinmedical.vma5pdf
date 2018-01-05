@@ -38,13 +38,13 @@ See the accompanying LICENSE file for applicable license.
   <xsl:attribute-set name="odd__header">
     <xsl:attribute name="text-align">end</xsl:attribute>
     <xsl:attribute name="end-indent">18pt</xsl:attribute>
-    <xsl:attribute name="space-before">18pt</xsl:attribute>
+    <xsl:attribute name="space-before">1pt</xsl:attribute> <!--von 18 auf eins gesetzt, um Abstand zu Lang-Tab zu veringern-->
     <xsl:attribute name="space-before.conditionality">retain</xsl:attribute>
   </xsl:attribute-set>
 
   <xsl:attribute-set name="even__header">
     <xsl:attribute name="start-indent">18pt</xsl:attribute>
-    <xsl:attribute name="space-before">18pt</xsl:attribute>
+    <xsl:attribute name="space-before">1pt</xsl:attribute> <!--von 18 auf eins gesetzt, um Abstand zu Lang-Tab zu veringern-->
     <xsl:attribute name="space-before.conditionality">retain</xsl:attribute>
   </xsl:attribute-set>
 
@@ -86,7 +86,32 @@ See the accompanying LICENSE file for applicable license.
 
     <xsl:attribute-set name="__body__odd__header" use-attribute-sets="odd__header">
     </xsl:attribute-set>
-
+  
+  <!--Rein Medical Start-->
+  <xsl:attribute-set name="__rm__header__language__tab">  
+        
+    <xsl:attribute name="text-align">center</xsl:attribute>
+    <xsl:attribute name="color">white</xsl:attribute>
+    
+  </xsl:attribute-set>
+  
+    <xsl:attribute-set name="__rm__language__tab">  
+    <!--
+    <xsl:attribute name="border-width">1pt</xsl:attribute>
+    <xsl:attribute name="border-color">555555</xsl:attribute>
+    <xsl:attribute name="border-style">solid</xsl:attribute>-->
+    <xsl:attribute name="background-color">black</xsl:attribute>
+    <xsl:attribute name="text-align">center</xsl:attribute>
+    <xsl:attribute name="color">white</xsl:attribute>
+  </xsl:attribute-set>
+  <!--Rein Medical End-->
+  
+<!--Rein Medical Start-->
+  <xsl:attribute-set name="__rm__body__odd__header__language">
+    <!--Positionierung direkt in xsl attributiert-->
+  </xsl:attribute-set>
+<!--Rein Medical End-->
+  
     <xsl:attribute-set name="__body__odd__header__heading">
     </xsl:attribute-set>
 
@@ -95,6 +120,12 @@ See the accompanying LICENSE file for applicable license.
 
     <xsl:attribute-set name="__body__even__header" use-attribute-sets="even__header">
     </xsl:attribute-set>
+  
+  <!--Rein Medical Start-->
+  <xsl:attribute-set name="__rm__body__even__header__language">
+    <!--Positionierung direkt in xsl attributiert-->
+  </xsl:attribute-set>
+  <!--Rein Medical End-->
 
     <xsl:attribute-set name="__body__even__header__heading">
     </xsl:attribute-set>
