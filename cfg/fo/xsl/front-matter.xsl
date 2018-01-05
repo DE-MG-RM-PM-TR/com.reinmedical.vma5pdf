@@ -100,7 +100,7 @@ See the accompanying LICENSE file for applicable license.
   </xsl:template>
 
   <xsl:template name="createFrontCoverContents">
-    <!-- set the title -->
+    <!-- set the title block -->
     <fo:block-container xsl:use-attribute-sets="__rm__frontmatter__title_box_frame">
       <fo:block-container xsl:use-attribute-sets="__rm__frontmatter__title__box">
         <fo:block xsl:use-attribute-sets="__frontmatter__title">
@@ -119,7 +119,7 @@ See the accompanying LICENSE file for applicable license.
             </xsl:otherwise>
           </xsl:choose>
         </fo:block>
-        <fo:block xsl:use-attribute-sets="__rm__ArtNr"><xsl:value-of select="//data[./@id[contains(., '_ArtNr')]]/ph"/>
+        <fo:block xsl:use-attribute-sets="__rm__ArtNr"><xsl:value-of select="//data[./@id[contains(., '_ArtNr')]]/ph"/>; (MK <xsl:value-of select="//data[./@id[contains(., '_Produktrevision')]]/ph"/>)
         </fo:block>
       </fo:block-container></fo:block-container>
     <!-- set the subtitle -->
