@@ -86,7 +86,7 @@ See the accompanying LICENSE file for applicable license.
                   Hintergrundbild! - Dieser Block hat ein Hintergrundbild! - Dieser Block hat ein Hintergrundbild!
                 </fo:block>-->
 
-            <fo:block-container absolute-position="absolute" top="-2cm" left="-2cm" width="28cm" height="39.7cm" background-image="Customization/OpenTopic/common/artwork/ManualCoverPageA4_V2-01.png">
+            <fo:block-container absolute-position="absolute" top="-2cm" left="-2cm" width="28cm" height="39.7cm" background-image="Customization/OpenTopic/common/artwork/ManualCoverPageA4-02.svg">
               <fo:block/>
             </fo:block-container>
 
