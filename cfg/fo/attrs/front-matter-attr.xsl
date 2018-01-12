@@ -48,7 +48,7 @@ See the accompanying LICENSE file for applicable license.
         <xsl:attribute name="border-color">lightgray</xsl:attribute> 
         <xsl:attribute name="fox:border-radius">10pt</xsl:attribute> 
         <xsl:attribute name="padding">5pt</xsl:attribute> 
-        <xsl:attribute name="width">495pt</xsl:attribute> 
+        <xsl:attribute name="width">455pt</xsl:attribute> 
     </xsl:attribute-set>
     <!--This block frames the Title Box in white to separate it from background image fragments-->
     <xsl:attribute-set name="__rm__frontmatter__title_box_frame">
@@ -63,7 +63,6 @@ See the accompanying LICENSE file for applicable license.
         <xsl:attribute name="padding-right">15pt</xsl:attribute> 
         <xsl:attribute name="padding-top">0pt</xsl:attribute> 
         <xsl:attribute name="padding-bottom">0pt</xsl:attribute>
-        <xsl:attribute name="width">495pt</xsl:attribute> 
     </xsl:attribute-set>
 
     <xsl:attribute-set name="__frontmatter__title" use-attribute-sets="common.title">
