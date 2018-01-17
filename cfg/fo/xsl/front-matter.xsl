@@ -31,7 +31,10 @@ This file is part of the DITA Open Toolkit project.
 See the accompanying LICENSE file for applicable license.
 -->
 
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:opentopic="http://www.idiominc.com/opentopic" exclude-result-prefixes="opentopic" version="2.0">
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
+  xmlns:fo="http://www.w3.org/1999/XSL/Format" 
+  xmlns:fn="www.w3.org/2005/xpath-functions"
+  xmlns:opentopic="http://www.idiominc.com/opentopic" exclude-result-prefixes="opentopic" version="2.0">
 
   <xsl:template match="*[contains(@class, ' map/topicmeta ')]">
     <fo:block-container xsl:use-attribute-sets="__frontmatter__owner__container">
@@ -204,7 +207,7 @@ See the accompanying LICENSE file for applicable license.
       </fo:block> 
     </fo:block-container>-->
     <fo:block-container xsl:use-attribute-sets="__rm__Title_Credits">
-      <fo:block><xsl:value-of select="//data[./@id[contains(., 'HandbArtNr')]]/ph/text()"/>
+      <fo:block><xsl:value-of select="string-join(.//data[./@id[contains(., 'HandbArtNr')]]//text(), '')"/>
         <xsl:choose>
           <xsl:when test="contains(@xml:lang, 'en-gb')"> [EN] </xsl:when>
           <xsl:when test="contains(@xml:lang, 'de-de')"> [DE] </xsl:when>
