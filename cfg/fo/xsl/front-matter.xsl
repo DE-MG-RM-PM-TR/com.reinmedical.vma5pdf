@@ -125,23 +125,43 @@ See the accompanying LICENSE file for applicable license.
         
         <!--Rein Medical Edit Start-->
         <!--list model numbers and product revision no (if available and greater than 0)-->
-        <xsl:choose>
-          <!--if revision is "0" print model numbers only-->
-          <xsl:when test="//data[./@id[contains(., '_Produktrevision')]]/ph = 0">
-            <fo:block xsl:use-attribute-sets="__rm__ArtNr"><xsl:value-of select="//data[./@id[contains(., '_ArtNr')]]/ph"/>
-            </fo:block>
-          </xsl:when>
-          <!--if revision is not available print model numbers only-->
-          <xsl:when test="not(//data[./@id[contains(., '_Produktrevision')]]/ph)">
-            <fo:block xsl:use-attribute-sets="__rm__ArtNr"><xsl:value-of select="//data[./@id[contains(., '_ArtNr')]]/ph"/>
-            </fo:block>
-          </xsl:when>
-          <!--all other situations print model numbers followed by revision as "MK x" statement-->
-          <xsl:otherwise>
-            <fo:block xsl:use-attribute-sets="__rm__ArtNr"><xsl:value-of select="//data[./@id[contains(., '_ArtNr')]]/ph"/>; (MK <xsl:value-of select="//data[./@id[contains(., '_Produktrevision')]]/ph"/>)
-            </fo:block>
-          </xsl:otherwise>
-        </xsl:choose>
+        <!--first of all we have to test if the value is a integer and not a string line V1.0.0-->
+        <xsl:if test="string-length(string(//data[./@id[contains(., '_Produktrevision')]]/ph))= 1">
+          <xsl:choose>
+            <!--if revision is "0" print model numbers only-->
+            <xsl:when test="//data[./@id[contains(., '_Produktrevision')]]/ph = 0">
+              <fo:block xsl:use-attribute-sets="__rm__ArtNr"><xsl:value-of select="//data[./@id[contains(., '_ArtNr')]]/ph"/>
+              </fo:block>
+            </xsl:when>
+            <!--all other situations print model numbers followed by revision as "MK x" statement-->
+            <xsl:otherwise>
+              <fo:block xsl:use-attribute-sets="__rm__ArtNr"><xsl:value-of select="//data[./@id[contains(., '_ArtNr')]]/ph"/>; (MK <xsl:value-of select="//data[./@id[contains(., '_Produktrevision')]]/ph"/>)
+              </fo:block>
+            </xsl:otherwise>
+          </xsl:choose>
+        </xsl:if>
+        <!--Falls keine Revision verfügbar oder länger als ein Zeichen-->
+        <xsl:if test="not(string-length(string(//data[./@id[contains(., '_Produktrevision')]]/ph))= 1)">
+          <xsl:choose>
+            <!--if revision is not available print model numbers only-->
+            <xsl:when test="not(//data[./@id[contains(., '_Produktrevision')]]/ph)">
+              <fo:block xsl:use-attribute-sets="__rm__ArtNr"><xsl:value-of select="//data[./@id[contains(., '_ArtNr')]]/ph"/>
+              </fo:block>
+            </xsl:when>
+            
+            <!--Version Prefix 'V' if contains version separator '.' --> 
+            <xsl:when test="contains(//data[./@id[contains(., '_Produktrevision')]]/ph, '.')">
+              <fo:block xsl:use-attribute-sets="__rm__ArtNr"><xsl:value-of select="//data[./@id[contains(., '_ArtNr')]]/ph"/>; (V <xsl:value-of select="//data[./@id[contains(., '_Produktrevision')]]/ph"/>)
+              </fo:block>
+            </xsl:when>
+            
+            <!--all other situations print model numbers followed by revision as "MK x" statement-->
+            <xsl:otherwise>
+              <fo:block xsl:use-attribute-sets="__rm__ArtNr"><xsl:value-of select="//data[./@id[contains(., '_ArtNr')]]/ph"/>; (MK <xsl:value-of select="//data[./@id[contains(., '_Produktrevision')]]/ph"/>)
+              </fo:block>
+            </xsl:otherwise>
+          </xsl:choose>
+        </xsl:if>
         <!--Rein Medical Edit End-->
         
         
